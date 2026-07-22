@@ -363,7 +363,7 @@ language sql stable security invoker set search_path=public as $$
       similarity(ep.normalized_search_text,q.normalized_query),
       case when lower(ep.source_stanza_number)=q.normalized_query then 1 else 0 end,
       case when lower(coalesce(e.translator,e.editor,'')) like '%'||q.normalized_query||'%' then .8 else 0 end
-    )::real
+    )::real as match_rank
   from query_values q
   join public.edition_passages ep on q.raw_query is not null
   join public.editions e on e.id=ep.edition_id
@@ -388,7 +388,7 @@ language sql stable security invoker set search_path=public as $$
       )
     )
   group by cp.slug,cp.internal_reference,e.slug,e.edition_title,e.translator,e.editor,
-    ep.source_stanza_number,ep.section_heading,ep.text_lines,ep.normalized_search_text,q.ts_query,q.normalized_query
+    ep.source_stanza_number,ep.section_heading,ep.text_lines,ep.normalized_search_text,q.ts_query,q.normalized_query,e.publication_year
   order by match_rank desc,cp.slug,e.publication_year
   limit least(greatest(max_results,1),100)
 $$;
