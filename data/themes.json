@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "hospitality",
+    "title": "Hospitality",
+    "description": "Arrival, welcome, shelter, food, clothing, and obligations between host and guest."
+  },
+  {
+    "slug": "watchfulness",
+    "title": "Watchfulness",
+    "description": "Caution, observation, and the risks assumed in unfamiliar social spaces."
+  },
+  {
+    "slug": "wisdom",
+    "title": "Wisdom",
+    "description": "Practical judgment, restraint, learning, and the limits of knowledge."
+  },
+  {
+    "slug": "speech",
+    "title": "Speech",
+    "description": "Speaking, boasting, silence, listening, and social consequence."
+  },
+  {
+    "slug": "travel",
+    "title": "Travel",
+    "description": "Counsel for movement, unfamiliar roads, and life away from home."
+  },
+  {
+    "slug": "drink",
+    "title": "Drink and Moderation",
+    "description": "Ale, memory, self-command, and social conduct."
+  },
+  {
+    "slug": "life-and-death",
+    "title": "Life and Death",
+    "description": "Mortality, sickness, survival, burial, and the value assigned to living."
+  },
+  {
+    "slug": "reputation",
+    "title": "Reputation",
+    "description": "Renown, memory, memorials, deeds, and what may remain after death."
+  },
+  {
+    "slug": "wealth",
+    "title": "Wealth",
+    "description": "Possession, poverty, instability, pride, and social judgment."
+  },
+  {
+    "slug": "kinship",
+    "title": "Kinship",
+    "description": "Children, relatives, remembrance, inheritance, and obligation."
+  },
+  {
+    "slug": "runes",
+    "title": "Runes",
+    "description": "Passages explicitly concerning runes, knowledge, and magical counsel."
+  }
+]

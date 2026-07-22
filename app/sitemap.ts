@@ -1,0 +1,5 @@
+import type { MetadataRoute } from "next";
+import { editionRegistry,getAllPassages,themeRegistry } from "@/lib/data";
+import { starterGuides } from "@/lib/study-guides";
+import { siteConfig } from "@/lib/site";
+export default function sitemap():MetadataRoute.Sitemap{const base=siteConfig.url,staticRoutes=["","/havamal","/compare","/themes","/editions","/study","/quote-maker","/discuss","/sources","/methodology","/licensing","/corrections","/about","/community-guidelines","/privacy","/terms","/accessibility"];return[...staticRoutes.map(route=>({url:`${base}${route}`,changeFrequency:"monthly" as const,priority:route===""?1:.7})),...getAllPassages().map(x=>({url:`${base}/havamal/stanza/${x.slug}`,changeFrequency:"monthly" as const,priority:.8})),...themeRegistry.map(x=>({url:`${base}/themes/${x.slug}`,changeFrequency:"monthly" as const,priority:.6})),...editionRegistry.map(x=>({url:`${base}/editions/${x.slug}`,changeFrequency:"yearly" as const,priority:.5})),...starterGuides.map(x=>({url:`${base}/study/${x.slug}`,changeFrequency:"monthly" as const,priority:.6}))]}

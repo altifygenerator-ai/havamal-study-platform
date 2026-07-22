@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "stanza-discussion",
+    "title": "Stanza Discussion",
+    "description": "The shared category for automatically linked passage threads."
+  },
+  {
+    "slug": "translation-questions",
+    "title": "Translation Questions",
+    "description": "Questions about wording, line breaks, and differences between editions."
+  },
+  {
+    "slug": "sources-and-editions",
+    "title": "Sources and Editions",
+    "description": "Publication history, textual witnesses, transcription, and licensing."
+  },
+  {
+    "slug": "study-methods",
+    "title": "Study Methods",
+    "description": "Ways readers organize comparison, notes, and careful rereading."
+  },
+  {
+    "slug": "historical-context",
+    "title": "Historical Context",
+    "description": "Source-based questions about social, literary, and manuscript context."
+  },
+  {
+    "slug": "practice-and-reflection",
+    "title": "Practice and Reflection",
+    "description": "Clearly labeled personal reflection and lived interpretation."
+  },
+  {
+    "slug": "site-corrections",
+    "title": "Site Corrections",
+    "description": "Potential transcription, attribution, numbering, and source issues."
+  },
+  {
+    "slug": "site-feedback",
+    "title": "Site Feedback",
+    "description": "Usability, accessibility, and product suggestions."
+  }
+]

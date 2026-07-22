@@ -1,0 +1,13 @@
+node_modules
+.next
+.env
+.env.local
+.vercel
+coverage
+*.log
+.DS_Store
+
+*.tsbuildinfo
+
+data/source-cache/*
+!data/source-cache/.gitkeep

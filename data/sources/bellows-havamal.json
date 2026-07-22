@@ -1,0 +1,643 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "slug": "bellows-1923",
+    "workTitle": "Hávamál",
+    "editionTitle": "The Poetic Edda: Translated from the Icelandic with an Introduction and Notes",
+    "translator": "Henry Adams Bellows",
+    "publicationYear": 1923,
+    "originalPublisher": "American-Scandinavian Foundation",
+    "sourceProvider": "Project Gutenberg",
+    "sourceLocation": "https://www.gutenberg.org/ebooks/73533",
+    "language": "English",
+    "licenseName": "Public domain in the United States",
+    "licenseStatus": "public_domain",
+    "attributionText": "Hávamál, translated by Henry Adams Bellows, in The Poetic Edda (1923). Public-domain transcription sourced from Project Gutenberg ebook 73533.",
+    "publicDomainJurisdictionNotes": "Recorded for United States publication status. Recheck rules for other jurisdictions before commercial reuse.",
+    "commercialReuseAllowed": true,
+    "noncommercialReuseAllowed": true,
+    "fullTextDisplayAllowed": true,
+    "quoteCardExportAllowed": true,
+    "downloadableExportAllowed": true,
+    "sourceNotes": "Bundled passages were transcribed against the Project Gutenberg HTML edition and marked published only after line-level review. Complete-corpus ingestion remains an editorial import task.",
+    "dateLastVerified": "2026-07-22",
+    "verifiedBy": "project editor",
+    "enabled": true
+  },
+  "passages": [
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "1",
+      "canonical_slug": "passage-001",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Within the gates | ere a man shall go,",
+        "(Full warily let him watch,)",
+        "Full long let him look about him;",
+        "For little he knows | where a foe may lurk,",
+        "And sit in the seats within."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "watchfulness",
+        "hospitality",
+        "travel"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "2",
+      "canonical_slug": "passage-002",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Hail to the giver! | a guest has come;",
+        "Where shall the stranger sit?",
+        "Swift shall he be | who with swords shall try",
+        "The proof of his might to make."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "hospitality",
+        "watchfulness"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "3",
+      "canonical_slug": "passage-003",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Fire he needs | who with frozen knees",
+        "Has come from the cold without;",
+        "Food and clothes | must the farer have,",
+        "The man from the mountains come."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "hospitality",
+        "travel"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "4",
+      "canonical_slug": "passage-004",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Water and towels | and welcoming speech",
+        "Should he find who comes to the feast;",
+        "If renown he would get, | and again be greeted,",
+        "Wisely and well must he act."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "hospitality",
+        "reputation",
+        "speech"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "5",
+      "canonical_slug": "passage-005",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Wits must he have | who wanders wide,",
+        "But all is easy at home;",
+        "At the witless man | the wise shall wink",
+        "When among such men he sits."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "wisdom",
+        "travel"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "6",
+      "canonical_slug": "passage-006",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "A man shall not boast | of his keenness of mind,",
+        "But keep it close in his breast;",
+        "To the silent and wise | does ill come seldom",
+        "When he goes as guest to a house;",
+        "(For a faster friend | one never finds",
+        "Than wisdom tried and true.)"
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "wisdom",
+        "speech",
+        "hospitality"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "7",
+      "canonical_slug": "passage-007",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "The knowing guest | who goes to the feast,",
+        "In silent attention sits;",
+        "With his ears he hears, | with his eyes he watches,",
+        "Thus wary are wise men all."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "wisdom",
+        "speech",
+        "watchfulness",
+        "hospitality"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "8",
+      "canonical_slug": "passage-008",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Happy the one | who wins for himself",
+        "Favor and praises fair;",
+        "Less safe by far | is the wisdom found",
+        "That is hid in another’s heart."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "wisdom",
+        "reputation"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "9",
+      "canonical_slug": "passage-009",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Happy the man | who has while he lives",
+        "Wisdom and praise as well,",
+        "For evil counsel | a man full oft",
+        "Has from another’s heart."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "wisdom",
+        "reputation"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "10",
+      "canonical_slug": "passage-010",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "A better burden | may no man bear",
+        "For wanderings wide than wisdom;",
+        "It is better than wealth | on unknown ways,",
+        "And in grief a refuge it gives."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "wisdom",
+        "travel",
+        "wealth"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "11",
+      "canonical_slug": "passage-011",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "A better burden | may no man bear",
+        "For wanderings wide than wisdom;",
+        "Worse food for the journey | he brings not afield",
+        "Than an over-drinking of ale."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "wisdom",
+        "travel",
+        "drink"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "12",
+      "canonical_slug": "passage-012",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Less good there lies | than most believe",
+        "In ale for mortal men;",
+        "For the more he drinks | the less does man",
+        "Of his mind the mastery hold."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "drink",
+        "wisdom"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "68",
+      "canonical_slug": "passage-068",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Fire for men | is the fairest gift,",
+        "And power to see the sun;",
+        "Health as well, | if a man may have it,",
+        "And a life not stained with sin."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "life-and-death"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "69",
+      "canonical_slug": "passage-069",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "All wretched is no man, | though never so sick;",
+        "Some from their sons have joy,",
+        "Some win it from kinsmen, | and some from their wealth,",
+        "And some from worthy works."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "life-and-death",
+        "kinship",
+        "wealth",
+        "reputation"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "70",
+      "canonical_slug": "passage-070",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "It is better to live | than to lie a corpse,",
+        "The live man catches the cow;",
+        "I saw flames rise | for the rich man’s pyre,",
+        "And before his door he lay dead."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "life-and-death",
+        "wealth"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "71",
+      "canonical_slug": "passage-071",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "The lame rides a horse, | the handless is herdsman,",
+        "The deaf in battle is bold;",
+        "The blind man is better | than one that is burned,",
+        "No good can come of a corpse."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "life-and-death"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "72",
+      "canonical_slug": "passage-072",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "A son is better, | though late he be born,",
+        "And his father to death have fared;",
+        "Memory-stones | seldom stand by the road",
+        "Save when kinsman honors his kin."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "kinship",
+        "reputation",
+        "life-and-death"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "73",
+      "canonical_slug": "passage-073",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Two make a battle, | the tongue slays the head;",
+        "In each furry coat | a fist I look for."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "speech",
+        "watchfulness"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "74",
+      "canonical_slug": "passage-074",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "He welcomes the night | whose fare is enough.",
+        "(Short are the yards of a ship,)",
+        "Uneasy are autumn nights;",
+        "Full oft does the weather | change in a week,",
+        "And more in a month’s time."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "travel",
+        "watchfulness"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "75",
+      "canonical_slug": "passage-075",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "A man knows not, | if nothing he knows,",
+        "That gold oft apes begets;",
+        "One man is wealthy | and one is poor,",
+        "Yet scorn for him none should know."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "wisdom",
+        "wealth"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "76",
+      "canonical_slug": "passage-076",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Among Fitjung’s sons | saw I well-stocked folds,—",
+        "Now bear they the beggar’s staff;",
+        "Wealth is as swift | as a winking eye,",
+        "Of friends the falsest it is."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "wealth"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "77",
+      "canonical_slug": "passage-077",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Cattle die, | and kinsmen die,",
+        "And so one dies one’s self;",
+        "But a noble name | will never die,",
+        "If good renown one gets."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "life-and-death",
+        "reputation",
+        "kinship"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "78",
+      "canonical_slug": "passage-078",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Cattle die, | and kinsmen die,",
+        "And so one dies one’s self;",
+        "One thing I know | that never dies,",
+        "The fame of a dead man’s deeds."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "life-and-death",
+        "reputation",
+        "kinship"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    },
+    {
+      "edition_slug": "bellows-1923",
+      "source_stanza_number": "79",
+      "canonical_slug": "passage-079",
+      "section": "Hávamál proper",
+      "text_lines": [
+        "Certain is that | which is sought from runes,",
+        "That the gods so great have made,",
+        "And the Master-Poet painted;",
+        "........ | ........",
+        "..... of the race of gods:",
+        "Silence is safest and best."
+      ],
+      "prose_note": null,
+      "footnotes": [],
+      "source_page": null,
+      "source_reference": "https://www.gutenberg.org/files/73533/73533-h/73533-h.htm#HOVAMOL",
+      "license_reference": "https://www.gutenberg.org/policy/license.html",
+      "review_status": "published",
+      "themes": [
+        "runes",
+        "speech",
+        "wisdom"
+      ],
+      "alignment_confidence": "exact",
+      "alignment_relation": "one_to_one",
+      "alignment_note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+    }
+  ]
+}

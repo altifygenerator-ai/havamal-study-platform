@@ -1,0 +1,73 @@
+[
+  {
+    "editionSlug": "bellows-1923",
+    "outputFile": "bellows-havamal.json",
+    "acquisitionStatus": "bundled_partial",
+    "expectedStanzaCount": 165,
+    "sourceUrl": "https://en.wikisource.org/w/api.php?action=query&prop=extracts&explaintext=1&redirects=1&titles=The_Poetic_Edda_(tr._Bellows)/Hovamol&format=json&formatversion=2",
+    "verificationUrl": "https://www.gutenberg.org/ebooks/73533",
+    "licenseUrl": "https://www.gutenberg.org/policy/permission.html",
+    "parser": "bellows-wikisource",
+    "autoPublish": false,
+    "notes": "Public-domain English translation. Fetch replaces the partial bundled sample with the full 165-stanza transcription, but new records remain needs_review until an editor approves them."
+  },
+  {
+    "editionSlug": "thorpe-1866",
+    "outputFile": "thorpe-havamal.json",
+    "acquisitionStatus": "ready_to_fetch",
+    "expectedStanzaCount": 166,
+    "sourceUrl": "https://www.gutenberg.org/files/14726/14726-h/14726-h.htm",
+    "verificationUrl": "https://www.gutenberg.org/ebooks/14726",
+    "licenseUrl": "https://www.gutenberg.org/policy/permission.html",
+    "parser": "thorpe-gutenberg",
+    "autoPublish": false,
+    "notes": "Public-domain English translation. Printed numbering is retained. Its 166 stanzas must be aligned separately rather than renumbered to match Bellows."
+  },
+  {
+    "editionSlug": "bray-1908",
+    "outputFile": "bray-havamal.json",
+    "acquisitionStatus": "manual_review_required",
+    "expectedStanzaCount": 164,
+    "sourceUrl": "https://wevikings.com/library/poetry/havamal/olive-bray/",
+    "verificationUrl": "https://archive.org/details/elderorpoeticedd01brayuoft",
+    "licenseUrl": "https://creativecommons.org/public-domain/mark/1.0/",
+    "parser": "bray-wevikings",
+    "autoPublish": false,
+    "notes": "Public-domain 1908 edition. The web transcription is an acquisition aid only; every stanza must be checked against the scan because other websites publish edited or reworked Bray text."
+  },
+  {
+    "editionSlug": "hollander-1928",
+    "outputFile": "hollander-havamal.json",
+    "acquisitionStatus": "manual_review_required",
+    "expectedStanzaCount": 165,
+    "sourceUrl": "https://wevikings.com/library/poetry/havamal/lee-m-hollander/",
+    "verificationUrl": "https://wevikings.com/library/poetry/havamal/lee-m-hollander/",
+    "licenseUrl": "https://blogs.loc.gov/copyright/2024/01/lifecycle-of-copyright-1928-works-in-the-public-domain/",
+    "parser": "hollander-wevikings",
+    "autoPublish": false,
+    "notes": "Original 1928 English translation only. It entered the U.S. public domain in 2024. Do not substitute text from the later revised edition; preserve printed wording, notes, and numbering."
+  },
+  {
+    "editionSlug": "pettit-2023",
+    "outputFile": "pettit-havamal.json",
+    "acquisitionStatus": "manual_review_required",
+    "expectedStanzaCount": 164,
+    "sourceUrl": "https://books.openbookpublishers.com/10.11647/obp.0308.xml.zip",
+    "verificationUrl": "https://www.openbookpublishers.com/books/10.11647/obp.0308",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "parser": "pettit-obp",
+    "autoPublish": false,
+    "notes": "Official dual-language edition under CC BY-NC 4.0. Import is allowed only while PROJECT_COMMERCIAL_MODE=false and must preserve attribution, English, Old Norse, notes, and editorial marks."
+  },
+  {
+    "editionSlug": "crawford-permission-pending",
+    "outputFile": "",
+    "acquisitionStatus": "metadata_only",
+    "sourceUrl": "https://jacksonwcrawford.com/",
+    "verificationUrl": "https://jacksonwcrawford.com/",
+    "licenseUrl": "",
+    "parser": "none",
+    "autoPublish": false,
+    "notes": "Copyrighted metadata record only. No full-text acquisition or import is permitted without written permission."
+  }
+]

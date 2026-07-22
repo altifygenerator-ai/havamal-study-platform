@@ -1,0 +1,2648 @@
+{
+  "schema_version": 1,
+  "work_slug": "havamal",
+  "anchor_edition": "bellows-1923",
+  "editorial_note": "Canonical passages are internal comparison anchors. Each edition retains its printed numbering. Non-Bellows mappings must be separately reviewed before publication.",
+  "passages": [
+    {
+      "canonical_slug": "passage-001",
+      "canonical_order": 1,
+      "label": "Aligned passage 1",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "1",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-002",
+      "canonical_order": 2,
+      "label": "Aligned passage 2",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "2",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-003",
+      "canonical_order": 3,
+      "label": "Aligned passage 3",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "3",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-004",
+      "canonical_order": 4,
+      "label": "Aligned passage 4",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "4",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-005",
+      "canonical_order": 5,
+      "label": "Aligned passage 5",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "5",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-006",
+      "canonical_order": 6,
+      "label": "Aligned passage 6",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "6",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-007",
+      "canonical_order": 7,
+      "label": "Aligned passage 7",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "7",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-008",
+      "canonical_order": 8,
+      "label": "Aligned passage 8",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "8",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-009",
+      "canonical_order": 9,
+      "label": "Aligned passage 9",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "9",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-010",
+      "canonical_order": 10,
+      "label": "Aligned passage 10",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "10",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-011",
+      "canonical_order": 11,
+      "label": "Aligned passage 11",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "11",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-012",
+      "canonical_order": 12,
+      "label": "Aligned passage 12",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "12",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-013",
+      "canonical_order": 13,
+      "label": "Aligned passage 13",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "13",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-014",
+      "canonical_order": 14,
+      "label": "Aligned passage 14",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "14",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-015",
+      "canonical_order": 15,
+      "label": "Aligned passage 15",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "15",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-016",
+      "canonical_order": 16,
+      "label": "Aligned passage 16",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "16",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-017",
+      "canonical_order": 17,
+      "label": "Aligned passage 17",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "17",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-018",
+      "canonical_order": 18,
+      "label": "Aligned passage 18",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "18",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-019",
+      "canonical_order": 19,
+      "label": "Aligned passage 19",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "19",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-020",
+      "canonical_order": 20,
+      "label": "Aligned passage 20",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "20",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-021",
+      "canonical_order": 21,
+      "label": "Aligned passage 21",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "21",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-022",
+      "canonical_order": 22,
+      "label": "Aligned passage 22",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "22",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-023",
+      "canonical_order": 23,
+      "label": "Aligned passage 23",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "23",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-024",
+      "canonical_order": 24,
+      "label": "Aligned passage 24",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "24",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-025",
+      "canonical_order": 25,
+      "label": "Aligned passage 25",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "25",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-026",
+      "canonical_order": 26,
+      "label": "Aligned passage 26",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "26",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-027",
+      "canonical_order": 27,
+      "label": "Aligned passage 27",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "27",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-028",
+      "canonical_order": 28,
+      "label": "Aligned passage 28",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "28",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-029",
+      "canonical_order": 29,
+      "label": "Aligned passage 29",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "29",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-030",
+      "canonical_order": 30,
+      "label": "Aligned passage 30",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "30",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-031",
+      "canonical_order": 31,
+      "label": "Aligned passage 31",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "31",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-032",
+      "canonical_order": 32,
+      "label": "Aligned passage 32",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "32",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-033",
+      "canonical_order": 33,
+      "label": "Aligned passage 33",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "33",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-034",
+      "canonical_order": 34,
+      "label": "Aligned passage 34",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "34",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-035",
+      "canonical_order": 35,
+      "label": "Aligned passage 35",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "35",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-036",
+      "canonical_order": 36,
+      "label": "Aligned passage 36",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "36",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-037",
+      "canonical_order": 37,
+      "label": "Aligned passage 37",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "37",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-038",
+      "canonical_order": 38,
+      "label": "Aligned passage 38",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "38",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-039",
+      "canonical_order": 39,
+      "label": "Aligned passage 39",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "39",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-040",
+      "canonical_order": 40,
+      "label": "Aligned passage 40",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "40",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-041",
+      "canonical_order": 41,
+      "label": "Aligned passage 41",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "41",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-042",
+      "canonical_order": 42,
+      "label": "Aligned passage 42",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "42",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-043",
+      "canonical_order": 43,
+      "label": "Aligned passage 43",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "43",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-044",
+      "canonical_order": 44,
+      "label": "Aligned passage 44",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "44",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-045",
+      "canonical_order": 45,
+      "label": "Aligned passage 45",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "45",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-046",
+      "canonical_order": 46,
+      "label": "Aligned passage 46",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "46",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-047",
+      "canonical_order": 47,
+      "label": "Aligned passage 47",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "47",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-048",
+      "canonical_order": 48,
+      "label": "Aligned passage 48",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "48",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-049",
+      "canonical_order": 49,
+      "label": "Aligned passage 49",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "49",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-050",
+      "canonical_order": 50,
+      "label": "Aligned passage 50",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "50",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-051",
+      "canonical_order": 51,
+      "label": "Aligned passage 51",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "51",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-052",
+      "canonical_order": 52,
+      "label": "Aligned passage 52",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "52",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-053",
+      "canonical_order": 53,
+      "label": "Aligned passage 53",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "53",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-054",
+      "canonical_order": 54,
+      "label": "Aligned passage 54",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "54",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-055",
+      "canonical_order": 55,
+      "label": "Aligned passage 55",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "55",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-056",
+      "canonical_order": 56,
+      "label": "Aligned passage 56",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "56",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-057",
+      "canonical_order": 57,
+      "label": "Aligned passage 57",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "57",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-058",
+      "canonical_order": 58,
+      "label": "Aligned passage 58",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "58",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-059",
+      "canonical_order": 59,
+      "label": "Aligned passage 59",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "59",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-060",
+      "canonical_order": 60,
+      "label": "Aligned passage 60",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "60",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-061",
+      "canonical_order": 61,
+      "label": "Aligned passage 61",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "61",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-062",
+      "canonical_order": 62,
+      "label": "Aligned passage 62",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "62",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-063",
+      "canonical_order": 63,
+      "label": "Aligned passage 63",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "63",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-064",
+      "canonical_order": 64,
+      "label": "Aligned passage 64",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "64",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-065",
+      "canonical_order": 65,
+      "label": "Aligned passage 65",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "65",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-066",
+      "canonical_order": 66,
+      "label": "Aligned passage 66",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "66",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-067",
+      "canonical_order": 67,
+      "label": "Aligned passage 67",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "67",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-068",
+      "canonical_order": 68,
+      "label": "Aligned passage 68",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "68",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-069",
+      "canonical_order": 69,
+      "label": "Aligned passage 69",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "69",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-070",
+      "canonical_order": 70,
+      "label": "Aligned passage 70",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "70",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-071",
+      "canonical_order": 71,
+      "label": "Aligned passage 71",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "71",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-072",
+      "canonical_order": 72,
+      "label": "Aligned passage 72",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "72",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-073",
+      "canonical_order": 73,
+      "label": "Aligned passage 73",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "73",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-074",
+      "canonical_order": 74,
+      "label": "Aligned passage 74",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "74",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-075",
+      "canonical_order": 75,
+      "label": "Aligned passage 75",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "75",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-076",
+      "canonical_order": 76,
+      "label": "Aligned passage 76",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "76",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-077",
+      "canonical_order": 77,
+      "label": "Aligned passage 77",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "77",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-078",
+      "canonical_order": 78,
+      "label": "Aligned passage 78",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "78",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-079",
+      "canonical_order": 79,
+      "label": "Aligned passage 79",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "79",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-080",
+      "canonical_order": 80,
+      "label": "Aligned passage 80",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "80",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-081",
+      "canonical_order": 81,
+      "label": "Aligned passage 81",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "81",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-082",
+      "canonical_order": 82,
+      "label": "Aligned passage 82",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "82",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-083",
+      "canonical_order": 83,
+      "label": "Aligned passage 83",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "83",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-084",
+      "canonical_order": 84,
+      "label": "Aligned passage 84",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "84",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-085",
+      "canonical_order": 85,
+      "label": "Aligned passage 85",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "85",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-086",
+      "canonical_order": 86,
+      "label": "Aligned passage 86",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "86",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-087",
+      "canonical_order": 87,
+      "label": "Aligned passage 87",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "87",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-088",
+      "canonical_order": 88,
+      "label": "Aligned passage 88",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "88",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-089",
+      "canonical_order": 89,
+      "label": "Aligned passage 89",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "89",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-090",
+      "canonical_order": 90,
+      "label": "Aligned passage 90",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "90",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-091",
+      "canonical_order": 91,
+      "label": "Aligned passage 91",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "91",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-092",
+      "canonical_order": 92,
+      "label": "Aligned passage 92",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "92",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-093",
+      "canonical_order": 93,
+      "label": "Aligned passage 93",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "93",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-094",
+      "canonical_order": 94,
+      "label": "Aligned passage 94",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "94",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-095",
+      "canonical_order": 95,
+      "label": "Aligned passage 95",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "95",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-096",
+      "canonical_order": 96,
+      "label": "Aligned passage 96",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "96",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-097",
+      "canonical_order": 97,
+      "label": "Aligned passage 97",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "97",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-098",
+      "canonical_order": 98,
+      "label": "Aligned passage 98",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "98",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-099",
+      "canonical_order": 99,
+      "label": "Aligned passage 99",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "99",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-100",
+      "canonical_order": 100,
+      "label": "Aligned passage 100",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "100",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-101",
+      "canonical_order": 101,
+      "label": "Aligned passage 101",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "101",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-102",
+      "canonical_order": 102,
+      "label": "Aligned passage 102",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "102",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-103",
+      "canonical_order": 103,
+      "label": "Aligned passage 103",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "103",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-104",
+      "canonical_order": 104,
+      "label": "Aligned passage 104",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "104",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-105",
+      "canonical_order": 105,
+      "label": "Aligned passage 105",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "105",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-106",
+      "canonical_order": 106,
+      "label": "Aligned passage 106",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "106",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-107",
+      "canonical_order": 107,
+      "label": "Aligned passage 107",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "107",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-108",
+      "canonical_order": 108,
+      "label": "Aligned passage 108",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "108",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-109",
+      "canonical_order": 109,
+      "label": "Aligned passage 109",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "109",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-110",
+      "canonical_order": 110,
+      "label": "Aligned passage 110",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "110",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-111",
+      "canonical_order": 111,
+      "label": "Aligned passage 111",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "111",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-112",
+      "canonical_order": 112,
+      "label": "Aligned passage 112",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "112",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-113",
+      "canonical_order": 113,
+      "label": "Aligned passage 113",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "113",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-114",
+      "canonical_order": 114,
+      "label": "Aligned passage 114",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "114",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-115",
+      "canonical_order": 115,
+      "label": "Aligned passage 115",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "115",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-116",
+      "canonical_order": 116,
+      "label": "Aligned passage 116",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "116",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-117",
+      "canonical_order": 117,
+      "label": "Aligned passage 117",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "117",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-118",
+      "canonical_order": 118,
+      "label": "Aligned passage 118",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "118",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-119",
+      "canonical_order": 119,
+      "label": "Aligned passage 119",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "119",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-120",
+      "canonical_order": 120,
+      "label": "Aligned passage 120",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "120",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-121",
+      "canonical_order": 121,
+      "label": "Aligned passage 121",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "121",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-122",
+      "canonical_order": 122,
+      "label": "Aligned passage 122",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "122",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-123",
+      "canonical_order": 123,
+      "label": "Aligned passage 123",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "123",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-124",
+      "canonical_order": 124,
+      "label": "Aligned passage 124",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "124",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-125",
+      "canonical_order": 125,
+      "label": "Aligned passage 125",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "125",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-126",
+      "canonical_order": 126,
+      "label": "Aligned passage 126",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "126",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-127",
+      "canonical_order": 127,
+      "label": "Aligned passage 127",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "127",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-128",
+      "canonical_order": 128,
+      "label": "Aligned passage 128",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "128",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-129",
+      "canonical_order": 129,
+      "label": "Aligned passage 129",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "129",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-130",
+      "canonical_order": 130,
+      "label": "Aligned passage 130",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "130",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-131",
+      "canonical_order": 131,
+      "label": "Aligned passage 131",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "131",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-132",
+      "canonical_order": 132,
+      "label": "Aligned passage 132",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "132",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-133",
+      "canonical_order": 133,
+      "label": "Aligned passage 133",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "133",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-134",
+      "canonical_order": 134,
+      "label": "Aligned passage 134",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "134",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-135",
+      "canonical_order": 135,
+      "label": "Aligned passage 135",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "135",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-136",
+      "canonical_order": 136,
+      "label": "Aligned passage 136",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "136",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-137",
+      "canonical_order": 137,
+      "label": "Aligned passage 137",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "137",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-138",
+      "canonical_order": 138,
+      "label": "Aligned passage 138",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "138",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-139",
+      "canonical_order": 139,
+      "label": "Aligned passage 139",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "139",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-140",
+      "canonical_order": 140,
+      "label": "Aligned passage 140",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "140",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-141",
+      "canonical_order": 141,
+      "label": "Aligned passage 141",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "141",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-142",
+      "canonical_order": 142,
+      "label": "Aligned passage 142",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "142",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-143",
+      "canonical_order": 143,
+      "label": "Aligned passage 143",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "143",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-144",
+      "canonical_order": 144,
+      "label": "Aligned passage 144",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "144",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-145",
+      "canonical_order": 145,
+      "label": "Aligned passage 145",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "145",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-146",
+      "canonical_order": 146,
+      "label": "Aligned passage 146",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "146",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-147",
+      "canonical_order": 147,
+      "label": "Aligned passage 147",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "147",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-148",
+      "canonical_order": 148,
+      "label": "Aligned passage 148",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "148",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-149",
+      "canonical_order": 149,
+      "label": "Aligned passage 149",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "149",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-150",
+      "canonical_order": 150,
+      "label": "Aligned passage 150",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "150",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-151",
+      "canonical_order": 151,
+      "label": "Aligned passage 151",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "151",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-152",
+      "canonical_order": 152,
+      "label": "Aligned passage 152",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "152",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-153",
+      "canonical_order": 153,
+      "label": "Aligned passage 153",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "153",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-154",
+      "canonical_order": 154,
+      "label": "Aligned passage 154",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "154",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-155",
+      "canonical_order": 155,
+      "label": "Aligned passage 155",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "155",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-156",
+      "canonical_order": 156,
+      "label": "Aligned passage 156",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "156",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-157",
+      "canonical_order": 157,
+      "label": "Aligned passage 157",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "157",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-158",
+      "canonical_order": 158,
+      "label": "Aligned passage 158",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "158",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-159",
+      "canonical_order": 159,
+      "label": "Aligned passage 159",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "159",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-160",
+      "canonical_order": 160,
+      "label": "Aligned passage 160",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "160",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-161",
+      "canonical_order": 161,
+      "label": "Aligned passage 161",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "161",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-162",
+      "canonical_order": 162,
+      "label": "Aligned passage 162",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "162",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-163",
+      "canonical_order": 163,
+      "label": "Aligned passage 163",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "163",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-164",
+      "canonical_order": 164,
+      "label": "Aligned passage 164",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "164",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    },
+    {
+      "canonical_slug": "passage-165",
+      "canonical_order": 165,
+      "label": "Aligned passage 165",
+      "anchor_edition": "bellows-1923",
+      "mappings": [
+        {
+          "edition_slug": "bellows-1923",
+          "source_stanza_number": "165",
+          "relation": "one_to_one",
+          "confidence": "exact",
+          "review_status": "approved",
+          "note": "Bellows numbering is the internal comparison anchor only; it is not presented as the academically definitive division."
+        }
+      ]
+    }
+  ]
+}

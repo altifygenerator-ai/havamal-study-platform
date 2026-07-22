@@ -1,0 +1,2 @@
+import { createSupabaseServerClient,hasSupabaseConfig } from "@/lib/supabase/server";
+export async function getAdminAccess(){if(!hasSupabaseConfig())return{configured:false,allowed:false,user:null};const supabase=await createSupabaseServerClient();const{data:{user}}=await supabase!.auth.getUser();if(!user)return{configured:true,allowed:false,user:null};const{data}=await supabase!.from("user_roles").select("role").eq("user_id",user.id).eq("role","admin").maybeSingle();return{configured:true,allowed:Boolean(data),user}}
