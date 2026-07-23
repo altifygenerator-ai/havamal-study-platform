@@ -24,6 +24,7 @@ export function AccountUtility() {
       return;
     }
 
+    const client = supabase;
     let active = true;
 
     async function applyUser(user: { id: string; email?: string | null } | null) {
@@ -33,7 +34,7 @@ export function AccountUtility() {
         return;
       }
 
-      const { data: profile } = await supabase
+      const { data: profile } = await client
         .from("profiles")
         .select("display_name")
         .eq("id", user.id)
@@ -47,8 +48,8 @@ export function AccountUtility() {
       });
     }
 
-    void supabase.auth.getUser().then(({ data }) => applyUser(data.user));
-    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+    void client.auth.getUser().then(({ data }) => applyUser(data.user));
+    const { data: listener } = client.auth.onAuthStateChange((_event, session) => {
       window.setTimeout(() => void applyUser(session?.user ?? null), 0);
     });
 

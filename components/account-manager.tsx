@@ -16,6 +16,7 @@ export function AccountManager() {
 
   useEffect(() => {
     if (!db) return;
+    const supabase = db;
     let active = true;
 
     async function loadUser(user: { id: string; email?: string | null } | null) {
@@ -28,7 +29,7 @@ export function AccountManager() {
 
       setUserId(user.id);
       setEmail(user.email || "");
-      const { data: profile } = await db
+      const { data: profile } = await supabase
         .from("profiles")
         .select("display_name,bio")
         .eq("id", user.id)
@@ -38,8 +39,8 @@ export function AccountManager() {
       setBio(profile?.bio || "");
     }
 
-    void db.auth.getUser().then(({ data }) => loadUser(data.user));
-    const { data: listener } = db.auth.onAuthStateChange((_event, session) => {
+    void supabase.auth.getUser().then(({ data }) => loadUser(data.user));
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
       window.setTimeout(() => void loadUser(session?.user ?? null), 0);
     });
 
