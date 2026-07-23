@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { SearchBox } from "@/components/search-box";
-import { getAllPassages, searchLocal } from "@/lib/data";
+import { getCompleteCorpus } from "@/lib/complete-corpus";
+import { searchCorpus } from "@/lib/corpus-search";
+import { getAllPassages } from "@/lib/data";
 import { excerptAround, normalizeSearchText } from "@/lib/normalize";
 import { starterGuides } from "@/lib/study-guides";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
@@ -42,20 +44,14 @@ export default async function Page({
     : "texts";
   const db = await createSupabaseServerClient();
 
-  let databaseTextResults: any[] = [];
-  let usedDatabaseSearch = false;
-  if (q && type === "texts" && db) {
-    const { data, error } = await db.rpc("search_havamal", {
-      query_text: q,
-      max_results: 50,
-    });
-    if (!error) {
-      databaseTextResults = data || [];
-      usedDatabaseSearch = true;
+  let textResults = q && type === "texts" ? searchCorpus(getAllPassages(), q) : [];
+  if (q && type === "texts") {
+    try {
+      textResults = searchCorpus((await getCompleteCorpus()).passages, q);
+    } catch {
+      // The reviewed bundled passages remain searchable when an external source is unavailable.
     }
   }
-
-  const localTextResults = q && type === "texts" && !usedDatabaseSearch ? searchLocal(q) : [];
 
   const safePatternQuery = q.replaceAll("%", "").replaceAll("_", "");
 
@@ -100,9 +96,7 @@ export default async function Page({
 
   const count =
     type === "texts"
-      ? usedDatabaseSearch
-        ? databaseTextResults.length
-        : localTextResults.length
+      ? textResults.length
       : type === "commentary"
         ? commentaryResults.length
         : type === "discussions"
@@ -113,7 +107,10 @@ export default async function Page({
     <div className="page-shell">
       <header className="page-heading">
         <h1>Search</h1>
-        <p>Primary-source text, reviewed commentary, community discussion, and study guides remain visibly separate.</p>
+        <p>
+          Search the complete available text corpus by phrase, theme, translator,
+          Old Norse term, or edition-specific stanza number.
+        </p>
       </header>
       <SearchBox initialQuery={q} />
 
@@ -125,27 +122,9 @@ export default async function Page({
             {count === 1 ? "" : "s"}
           </h2>
 
-          {type === "texts" && usedDatabaseSearch && (
+          {type === "texts" && (
             <div className="passage-index">
-              {databaseTextResults.map((result) => (
-                <Link
-                  key={`${result.canonical_slug}-${result.edition_slug}`}
-                  href={`/havamal/stanza/${result.canonical_slug}`}
-                  className="passage-index-row"
-                >
-                  <span>
-                    {result.translator || result.editor} {result.source_stanza_number}
-                  </span>
-                  <strong>{excerptAround((result.text_lines || []).join(" "), q)}</strong>
-                  <span>{result.section_heading || result.internal_reference}</span>
-                </Link>
-              ))}
-            </div>
-          )}
-
-          {type === "texts" && !usedDatabaseSearch && (
-            <div className="passage-index">
-              {localTextResults.map(({ canonical, edition, passage }) => (
+              {textResults.map(({ canonical, edition, passage }) => (
                 <Link
                   key={`${canonical.slug}-${edition.slug}`}
                   href={`/havamal/stanza/${canonical.slug}`}
@@ -155,7 +134,7 @@ export default async function Page({
                     {edition.translator || edition.editor} {passage.source_stanza_number}
                   </span>
                   <strong>{excerptAround(passage.text_lines.join(" "), q)}</strong>
-                  <span>{passage.section}</span>
+                  <span>{passage.section || canonical.internalReference}</span>
                 </Link>
               ))}
             </div>

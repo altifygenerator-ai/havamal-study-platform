@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AccountUtility } from "@/components/account-utility";
 import { SearchBox } from "@/components/search-box";
 
 const navItems = [
@@ -19,10 +20,9 @@ export function SiteHeader() {
 
       <div className="utility-strip">
         <p>Free · noncommercial · source-conscious</p>
-        <div>
+        <div className="utility-links">
           <Link href="/sources">Source register</Link>
-          <Link href="/my-study">Saved work</Link>
-          <Link href="/account">Account</Link>
+          <AccountUtility />
         </div>
       </div>
 

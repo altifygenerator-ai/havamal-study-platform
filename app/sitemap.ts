@@ -28,7 +28,7 @@ const STATIC_ROUTES = [
 
 function absoluteUrl(pathname: string) {
   const base = (
-    process.env.NEXT_PUBLIC_SITE_URL || "https://thehavamalarchive.org"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.thehavamalarchive.org"
   ).replace(/\/+$/, "");
 
   return `${base}${pathname}`;

@@ -1,6 +1,7 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import Link from "next/link";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 
 type AuthMode = "signin" | "signup" | "reset";
@@ -8,7 +9,7 @@ type AuthMode = "signin" | "signup" | "reset";
 const modeCopy: Record<AuthMode, { title: string; note: string; action: string }> = {
   signin: {
     title: "Return to your saved work",
-    note: "Sign in to open your bookmarks, private notes, study guides, and discussion account.",
+    note: "Sign in to open your bookmarks, private notes, study guides, saved quote designs, and discussion account.",
     action: "Sign in",
   },
   signup: {
@@ -29,8 +30,34 @@ export function AuthPanel() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [signedInEmail, setSignedInEmail] = useState<string | null>(null);
+  const [checkingSession, setCheckingSession] = useState(true);
   const supabase = useMemo(() => createSupabaseBrowserClient(), []);
   const copy = modeCopy[mode];
+
+  useEffect(() => {
+    if (!supabase) {
+      setCheckingSession(false);
+      return;
+    }
+
+    let active = true;
+    void supabase.auth.getUser().then(({ data }) => {
+      if (!active) return;
+      setSignedInEmail(data.user?.email ?? null);
+      setCheckingSession(false);
+    });
+
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSignedInEmail(session?.user?.email ?? null);
+      setCheckingSession(false);
+    });
+
+    return () => {
+      active = false;
+      listener.subscription.unsubscribe();
+    };
+  }, [supabase]);
 
   function chooseMode(nextMode: AuthMode) {
     setMode(nextMode);
@@ -66,15 +93,43 @@ export function AuthPanel() {
             })
           : await supabase.auth.signInWithPassword({ email, password });
 
+      if (result.error) {
+        setMessage(result.error.message);
+        return;
+      }
+
+      if (result.data.session) {
+        window.location.assign("/my-study");
+        return;
+      }
+
       setMessage(
-        result.error?.message ||
-          (mode === "signup"
-            ? "Check your email to verify the account."
-            : "Signed in."),
+        mode === "signup"
+          ? "Check your email to verify the account."
+          : "Signed in.",
       );
     } finally {
       setIsSubmitting(false);
     }
+  }
+
+  if (checkingSession) {
+    return <div className="account-session-check">Checking your account…</div>;
+  }
+
+  if (signedInEmail) {
+    return (
+      <section className="signed-in-panel">
+        <div>
+          <div className="section-kicker">Reader account active</div>
+          <h2>You are signed in</h2>
+          <p>{signedInEmail}</p>
+        </div>
+        <Link className="button" href="/my-study">
+          Open all saved work
+        </Link>
+      </section>
+    );
   }
 
   return (
