@@ -20,9 +20,7 @@ export function useCompleteCorpus(initialPassages: CanonicalPassage[]) {
     hasServerCorpus ? "ready" : "loading",
   );
   const [message, setMessage] = useState(
-    hasServerCorpus
-      ? `${initialEditionCount} complete editions loaded.`
-      : "Loading complete legal editions…",
+    hasServerCorpus ? "" : "Loading editions…",
   );
 
   useEffect(() => {
@@ -34,35 +32,26 @@ export function useCompleteCorpus(initialPassages: CanonicalPassage[]) {
           statuses?: CorpusSourceStatus[];
           error?: string;
         };
-        if (!response.ok || !body.passages) throw new Error(body.error || "Corpus request failed.");
+        if (!response.ok || !body.passages) {
+          throw new Error(body.error || "Corpus request failed.");
+        }
         setPassages(body.passages);
         setStatuses(body.statuses ?? []);
         setState("ready");
-        const available = new Set(
-          body.passages.flatMap((passage) =>
-            passage.editions.map(({ edition }) => edition.slug),
-          ),
-        );
-        setMessage(
-          available.size > 1
-            ? `${available.size} complete editions available for comparison.`
-            : "Using the bundled offline corpus.",
-        );
+        setMessage("");
       })
-      .catch((error: unknown) => {
+      .catch(() => {
         if (controller.signal.aborted) return;
         if (hasServerCorpus) {
           setState("ready");
-          setMessage(`${initialEditionCount} complete editions loaded.`);
+          setMessage("");
           return;
         }
         setState("error");
-        setMessage(
-          `Complete editions could not load; the bundled corpus remains available. ${error instanceof Error ? error.message : ""}`.trim(),
-        );
+        setMessage("Some editions are temporarily unavailable.");
       });
     return () => controller.abort();
-  }, [hasServerCorpus, initialEditionCount]);
+  }, [hasServerCorpus]);
 
   return { passages, statuses, state, message };
 }

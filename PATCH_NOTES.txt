@@ -1,0 +1,15 @@
+THE HÁVAMÁL ARCHIVE — PUBLIC COPY FIX
+
+Copy the app, components, and lib folders over the matching folders in your current repository.
+This patch changes public-facing copy and labels only, except for two small presentation fixes:
+- edition detail pages now read the same complete corpus used by Compare
+- successful corpus-load diagnostics are hidden from visitors
+
+It does not replace package.json, app/layout.tsx, Supabase configuration, analytics, authentication, or database files.
+
+After copying:
+  npm run typecheck
+  npm run build
+  git add app components lib
+  git commit -m "Replace internal copy with public-facing content"
+  git push origin main

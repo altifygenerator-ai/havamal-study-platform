@@ -3,62 +3,54 @@ export const metadata = { title: "Methodology" };
 export default function Page() {
   return (
     <article className="narrow-shell prose-page">
-      <div className="section-kicker">How the archive works</div>
+      <div className="section-kicker">How the texts are handled</div>
       <h1>Methodology</h1>
       <p>
-        The archive presents editions rather than silently blending them. Every passage keeps
-        its printed stanza number, wording, line divisions, notes, source reference, license
-        record, and review status.
+        The Hávamál survives through editions that do not always number, divide, or
+        punctuate the poem in the same way. The archive keeps each edition intact and
+        brings related passages together for comparison.
       </p>
 
-      <h2>Source acquisition</h2>
+      <h2>Choosing a text</h2>
       <p>
-        Text is acquired from a named edition through a documented manifest. Public-domain
-        Bellows and Thorpe transcriptions can be staged from traceable repositories. Bray is
-        checked against the 1908 scan. Pettit is acquired only from the official CC BY-NC 4.0
-        release while the project remains noncommercial. A readable web mirror is never treated
-        as automatic permission or as a distinct edition.
+        Every translation is tied to a named publication and a traceable source. Public
+        domain and openly licensed editions may be reproduced when their wording and
+        attribution can be checked. Copyrighted translations are not copied without
+        permission.
       </p>
 
-      <h2>Alignment</h2>
+      <h2>Keeping editions distinct</h2>
       <p>
-        Canonical passage references are internal finding aids. Bellows numbering supplies the
-        initial anchor because its complete public-domain text is available, but that choice is
-        administrative, not a claim that Bellows gives the single correct division.
-      </p>
-      <p>
-        Other editions retain their own printed numbers. Alignment records support one-to-one,
-        one-to-many, and many-to-one relationships, plus an explicit uncertainty state. The
-        proposal script can flag likely matches, but it cannot publish them. Relocated material,
-        merged stanzas, split stanzas, and edition-specific closing formulas require human review.
+        Spelling, punctuation, line breaks, notes, and printed stanza numbers remain with
+        the edition in which they appeared. The archive does not modernize one translation
+        or silently alter it to resemble another.
       </p>
 
-      <h2>Publication states</h2>
+      <h2>Comparing stanzas</h2>
       <p>
-        Fetched records begin as <em>needs review</em>. Validation checks structure, numbering,
-        Unicode, line content, and alignment metadata. Only an editor may approve and publish a
-        corpus. Publishing also enables its edition record; an unreviewed file remains invisible
-        in the public browser and comparison tool.
+        Related passages are placed together even when their printed numbers differ. When
+        one edition splits a passage that another keeps together, the comparison reflects
+        that difference rather than forcing a false one-to-one match.
       </p>
 
-      <h2>Editorial layers</h2>
+      <h2>Old Norse text</h2>
       <p>
-        Source text, translator notes, published commentary, editorial notes, personal notes,
-        and reader discussion are stored and labeled separately. Community opinions never become
-        scholarship merely because they are popular.
+        Old Norse is shown only when it comes from an edition that may legally be displayed.
+        Its spelling, punctuation, characters, and line divisions remain those of the
+        chosen edition.
+      </p>
+
+      <h2>Notes and discussion</h2>
+      <p>
+        Translator notes, published commentary, personal notes, and reader discussion are
+        presented separately. A reader’s interpretation is never presented as part of the
+        original text or as scholarly consensus.
       </p>
 
       <h2>Corrections</h2>
       <p>
-        Accepted textual corrections create revision records. The project does not silently
-        modernize wording, normalize an edition to match another, or repair a source based on
-        guesswork.
-      </p>
-
-      <h2>Limits</h2>
-      <p>
-        Where source rights, page references, alignment, or commentary are not verified, the
-        interface shows the uncertainty or an honest empty state.
+        Reported errors are checked against the cited edition before the text is changed.
+        Accepted corrections remain part of the edition’s correction history.
       </p>
     </article>
   );

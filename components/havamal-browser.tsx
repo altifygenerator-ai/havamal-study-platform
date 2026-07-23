@@ -74,9 +74,11 @@ export function HavamalBrowser({
 
   return (
     <>
-      <div className={`corpus-load-state browser-corpus-state ${corpus.state}`} role="status">
-        <strong>{corpus.message}</strong>
-      </div>
+      {corpus.state !== "ready" ? (
+        <div className={`corpus-load-state browser-corpus-state ${corpus.state}`} role="status">
+          <strong>{corpus.message}</strong>
+        </div>
+      ) : null}
       <section className="browser-tools" aria-label="Hávamál browser controls">
         <label>
           Filter text
@@ -132,7 +134,7 @@ export function HavamalBrowser({
 
       <p aria-live="polite" className="muted">
         {message ||
-          `${visible.length} aligned passage${visible.length === 1 ? "" : "s"}`}
+          `${visible.length} passage${visible.length === 1 ? "" : "s"}`}
       </p>
 
       <div className={view === "reading" ? "browser-reading" : "passage-index"}>
@@ -188,7 +190,7 @@ export function HavamalBrowser({
       </div>
 
       {!visible.length && (
-        <div className="empty-state">No loaded passages match these filters.</div>
+        <div className="empty-state">No passages match these filters.</div>
       )}
     </>
   );

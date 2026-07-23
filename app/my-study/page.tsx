@@ -7,12 +7,10 @@ export default function Page() {
     <div className="page-shell">
       <header className="page-heading">
         <div>
-          <div className="section-kicker">Private reader folio</div>
+          <div className="section-kicker">Your archive</div>
           <h1>My saved work</h1>
         </div>
-        <p>
-          Find every bookmarked passage, private note, personal study guide, and saved quote design connected to your account.
-        </p>
+        <p>Bookmarks, notes, personal guides, and saved quote cards, all in one place.</p>
       </header>
       <MyStudyDashboard />
     </div>

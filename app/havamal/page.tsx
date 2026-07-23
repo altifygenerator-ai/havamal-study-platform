@@ -11,10 +11,7 @@ export default async function Page() {
     <div className="page-shell">
       <header className="page-heading">
         <h1>Browse the Hávamál</h1>
-        <p>
-          Aligned passage references are internal finding aids. Printed stanza numbers
-          remain attached to their editions.
-        </p>
+        <p>Search by word, phrase, theme, translator, or printed stanza number.</p>
       </header>
       <HavamalBrowser passages={corpus.passages} themes={themeRegistry} />
     </div>

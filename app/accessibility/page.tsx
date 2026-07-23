@@ -1,2 +1,26 @@
-export const metadata={title:"Accessibility"};
-export default function Page(){return <article className="narrow-shell prose-page"><h1>Accessibility</h1><p>The application is designed for keyboard navigation, visible focus, semantic headings, readable contrast, reduced motion, screen-reader labels, preserved poetry line breaks, and responsive controls that do not force desktop scholarly layouts onto phones.</p><p>Quote cards include a plain-text equivalent. Old Norse characters are stored and rendered as Unicode rather than decorative images. Status is never communicated by color alone.</p><p>Accessibility problems can be reported through the corrections form under metadata issue, with the affected route and expected behavior.</p></article>}
+export const metadata = { title: "Accessibility" };
+
+export default function Page() {
+  return (
+    <article className="narrow-shell prose-page">
+      <h1>Accessibility</h1>
+      <p>
+        The Hávamál Archive is intended to be readable and usable with a keyboard, screen
+        reader, touch screen, or enlarged text.
+      </p>
+      <p>
+        Navigation has visible focus states, controls use clear labels, poetry keeps its
+        line breaks, and comparison views rearrange for smaller screens instead of shrinking
+        into unreadable columns.
+      </p>
+      <p>
+        Quote cards include the quotation as selectable text, and Old Norse characters are
+        written as text rather than embedded in decorative images.
+      </p>
+      <p>
+        Found an accessibility problem? Send the affected page and a description through
+        the correction form so it can be investigated.
+      </p>
+    </article>
+  );
+}

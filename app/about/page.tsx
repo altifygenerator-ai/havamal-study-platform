@@ -1,2 +1,24 @@
-export const metadata={title:"About"};
-export default function Page(){return <article className="narrow-shell prose-page"><div className="section-kicker">Reader-built resource</div><h1>About this project</h1><p>The Hávamál Archive is a free, noncommercial reading and comparison resource. It is built for Pagans, Heathens, scholars, students, mythology readers, writers, and anyone trying to locate or understand a passage without being told there is only one acceptable reading.</p><p>The project does not produce a new translation and does not claim to reveal a final meaning. It keeps original source material visible, records how each edition may be used, and gives readers tools to compare language, save private work, build study paths, and discuss passages responsibly.</p><p>The notes and discussions on this site are study aids, not final answers. Translations and readings differ. The point is to make those differences easier to see.</p></article>}
+export const metadata = { title: "About" };
+
+export default function Page() {
+  return (
+    <article className="narrow-shell prose-page">
+      <div className="section-kicker">About the archive</div>
+      <h1>A place to read before deciding what the text means.</h1>
+      <p>
+        The Hávamál Archive brings several editions of the poem into one reading space so
+        that differences in wording, numbering, and tone are easier to see.
+      </p>
+      <p>
+        It is made for Pagans, Heathens, students, scholars, writers, and curious readers.
+        You can browse without an account, compare translations, follow themes, create
+        credited quote cards, and read community discussion.
+      </p>
+      <p>
+        The archive does not offer a new translation or a single approved interpretation.
+        Its purpose is to keep the texts visible and give readers room to study them
+        carefully.
+      </p>
+    </article>
+  );
+}

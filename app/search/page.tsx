@@ -108,8 +108,7 @@ export default async function Page({
       <header className="page-heading">
         <h1>Search</h1>
         <p>
-          Search the complete available text corpus by phrase, theme, translator,
-          Old Norse term, or edition-specific stanza number.
+          Find a word, phrase, theme, translator, Old Norse term, or stanza number.
         </p>
       </header>
       <SearchBox initialQuery={q} />

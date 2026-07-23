@@ -19,9 +19,9 @@ export function SiteHeader() {
       </a>
 
       <div className="utility-strip">
-        <p>Free · noncommercial · source-conscious</p>
+        <p>Free to read · Built for close study</p>
         <div className="utility-links">
-          <Link href="/sources">Source register</Link>
+          <Link href="/sources">Sources</Link>
           <AccountUtility />
         </div>
       </div>

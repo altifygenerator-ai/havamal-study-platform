@@ -12,8 +12,7 @@ export function SiteFooter() {
       </div>
       <div>
         <p className="footer-note">
-          A free reader-built resource. Source text, editorial material, and community
-          discussion remain visibly separate.
+          Read, compare, save, and discuss the Hávamál across editions.
         </p>
         <nav aria-label="Footer navigation">
           <Link href="/methodology">Methodology</Link>

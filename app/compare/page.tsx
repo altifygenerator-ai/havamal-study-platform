@@ -14,10 +14,7 @@ export default async function Page({
     <div className="page-shell">
       <header className="page-heading">
         <h1>Compare translations</h1>
-        <p>
-          Select an aligned passage and view up to four available editions without
-          compressing their line breaks.
-        </p>
+        <p>Choose a passage and place up to four editions beside one another.</p>
       </header>
       <CompareTool passages={corpus.passages} initialSlug={passage} />
     </div>

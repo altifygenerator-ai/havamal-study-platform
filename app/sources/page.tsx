@@ -1,50 +1,61 @@
 import Link from "next/link";
 import manifests from "@/data/source-manifests.json";
-import { editionRegistry, getSourceFiles } from "@/lib/data";
+import { editionRegistry } from "@/lib/data";
+import { getCompleteCorpus } from "@/lib/complete-corpus";
 import type { SourceManifest } from "@/lib/types";
 
 export const metadata = { title: "Sources" };
+export const dynamic = "force-dynamic";
 
-const statusLabels: Record<SourceManifest["acquisitionStatus"], string> = {
-  bundled_partial: "Partial corpus bundled",
-  ready_to_fetch: "Verified source ready",
-  manual_review_required: "Scan review required",
-  metadata_only: "Metadata only",
+const availabilityLabels: Record<SourceManifest["acquisitionStatus"], string> = {
+  bundled_partial: "Selected text available",
+  ready_to_fetch: "Full text available",
+  manual_review_required: "Being checked against the printed edition",
+  metadata_only: "Publication details only",
 };
 
-export default function Page() {
-  const sourceFiles = getSourceFiles();
+export default async function Page() {
+  const corpus = await getCompleteCorpus();
   const sourceManifests = manifests as SourceManifest[];
+  const stanzaCounts = new Map<string, number>();
+
+  for (const passage of corpus.passages) {
+    for (const { edition } of passage.editions) {
+      stanzaCounts.set(edition.slug, (stanzaCounts.get(edition.slug) ?? 0) + 1);
+    }
+  }
 
   return (
     <div className="page-shell">
       <header className="page-heading">
         <div>
-          <div className="section-kicker">Source register</div>
-          <h1>Texts are acquired by edition, not copied from mirrors.</h1>
+          <div className="section-kicker">Sources</div>
+          <h1>Every translation begins with a named edition.</h1>
         </div>
         <p>
-          Public-domain or open-license status is only the beginning. Each local corpus also
-          needs a traceable transcription, preserved numbering, validation, and editorial review.
+          The archive identifies where each text came from, who translated or edited it,
+          when it was published, and how it may be shared.
         </p>
       </header>
 
-      <div className="source-table" role="region" aria-label="Source registry" tabIndex={0}>
+      <div className="source-table" role="region" aria-label="Edition sources" tabIndex={0}>
         <table>
           <thead>
             <tr>
               <th>Edition</th>
-              <th>Local records</th>
-              <th>Acquisition</th>
-              <th>Rights</th>
-              <th>Public display</th>
+              <th>Text on the archive</th>
+              <th>Availability</th>
+              <th>License</th>
+              <th>Read online</th>
             </tr>
           </thead>
           <tbody>
             {editionRegistry.map((edition) => {
-              const manifest = sourceManifests.find((entry) => entry.editionSlug === edition.slug);
-              const source = sourceFiles.find((entry) => entry.edition.slug === edition.slug);
-              const published = source?.passages.filter((passage) => passage.review_status === "published").length ?? 0;
+              const manifest = sourceManifests.find(
+                (entry) => entry.editionSlug === edition.slug,
+              );
+              const stanzaCount = stanzaCounts.get(edition.slug) ?? 0;
+
               return (
                 <tr key={edition.slug}>
                   <td>
@@ -53,13 +64,16 @@ export default function Page() {
                     </Link>
                     <small>{edition.publicationYear}</small>
                   </td>
+                  <td>{stanzaCount ? `${stanzaCount} stanzas` : "Not included"}</td>
                   <td>
-                    {source?.passages.length ?? 0}
-                    {source ? <small>{published} published</small> : <small>No text file</small>}
+                    {stanzaCount
+                      ? "Available now"
+                      : manifest
+                        ? availabilityLabels[manifest.acquisitionStatus]
+                        : "Edition overview"}
                   </td>
-                  <td>{manifest ? statusLabels[manifest.acquisitionStatus] : "Unregistered"}</td>
                   <td>{edition.licenseName}</td>
-                  <td>{edition.enabled && edition.fullTextDisplayAllowed ? "Enabled" : "Withheld"}</td>
+                  <td>{stanzaCount ? "Yes" : "No"}</td>
                 </tr>
               );
             })}
@@ -68,13 +82,13 @@ export default function Page() {
       </div>
 
       <section className="manuscript-notice">
-        <div className="section-kicker">Editorial rule</div>
+        <div className="section-kicker">Why editions stay separate</div>
         <p>
-          A fetched file is never published automatically. Imported stanzas begin in review,
-          retain their printed edition number, and require a separate alignment decision before
-          comparison. Copyrighted translations remain metadata-only without written permission.
+          Translators sometimes number, divide, or arrange the poem differently. The
+          archive keeps those differences visible rather than quietly rewriting one text
+          to match another.
         </p>
-        <Link href="/methodology">How alignment works →</Link>
+        <Link href="/methodology">Read how the texts are compared →</Link>
       </section>
     </div>
   );

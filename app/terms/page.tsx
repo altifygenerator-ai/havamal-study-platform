@@ -1,2 +1,43 @@
-export const metadata={title:"Terms"};
-export default function Page(){return <article className="narrow-shell prose-page"><h1>Terms of use</h1><p>This resource is provided for study and discussion. Source texts remain subject to the rights and attribution listed on their edition records. The site’s organization, notes, and tools do not replace published editions or professional scholarship.</p><p>Do not use the service to harass others, distribute unlawful material, evade copyright, interfere with the site, or misrepresent community posts as project-endorsed scholarship. Accounts may be restricted for violations of the community guidelines.</p><p>This is a launch-ready plain-language draft and should receive jurisdiction-specific legal review before a public production launch.</p></article>}
+export const metadata = { title: "Terms" };
+
+export default function Page() {
+  return (
+    <article className="narrow-shell prose-page">
+      <h1>Terms of use</h1>
+
+      <h2>Using the archive</h2>
+      <p>
+        The Hávamál Archive is provided for reading, study, citation, and discussion. It
+        does not replace a published edition, academic advice, or professional historical
+        research.
+      </p>
+
+      <h2>Texts and quotations</h2>
+      <p>
+        Each edition remains subject to the copyright, license, and attribution shown on
+        its edition page. Do not remove required credit from exported quotations or use
+        noncommercial material for commercial purposes.
+      </p>
+
+      <h2>Accounts and community use</h2>
+      <p>
+        Do not use the site to harass others, expose private information, post unlawful
+        material, distribute copyrighted full translations without permission, impersonate
+        another person, or interfere with the service.
+      </p>
+
+      <h2>Moderation</h2>
+      <p>
+        Posts may be removed and accounts may be warned, restricted, suspended, or banned
+        for violations of the community guidelines. Serious abuse or attempts to compromise
+        the site may result in immediate loss of access.
+      </p>
+
+      <h2>Availability</h2>
+      <p>
+        Features, sources, and community areas may change or become temporarily unavailable.
+        Saved work should not be treated as the only copy of important research or notes.
+      </p>
+    </article>
+  );
+}

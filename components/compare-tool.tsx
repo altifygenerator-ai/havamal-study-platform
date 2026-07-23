@@ -58,25 +58,13 @@ export function CompareTool({
   return (
     <div className="compare-tool">
       <aside className="compare-controls">
-        <div className={`corpus-load-state ${corpus.state}`} role="status">
-          <strong>{corpus.message}</strong>
-          {corpus.statuses.length ? (
-            <details>
-              <summary>Edition source status</summary>
-              <ul>
-                {corpus.statuses.map((status) => (
-                  <li key={status.editionSlug}>
-                    <span>{status.label}</span>
-                    <small>{status.state}{status.stanzaCount ? ` · ${status.stanzaCount} stanzas` : ""}</small>
-                    {status.state === "unavailable" ? <em>{status.message}</em> : null}
-                  </li>
-                ))}
-              </ul>
-            </details>
-          ) : null}
-        </div>
+        {corpus.state !== "ready" ? (
+          <div className={`corpus-load-state ${corpus.state}`} role="status">
+            <strong>{corpus.message}</strong>
+          </div>
+        ) : null}
         <label>
-          Aligned passage
+          Passage
           <select
             value={slug}
             onChange={(event) => {
@@ -103,7 +91,7 @@ export function CompareTool({
                 />
                 <span>
                   {edition.translator ?? edition.editor}
-                  <small>stanza {passage.source_stanza_number}{passage.alignment_confidence ? ` · ${passage.alignment_confidence} alignment` : ""}</small>
+                  <small>stanza {passage.source_stanza_number}</small>
                 </span>
               </label>
             ))}

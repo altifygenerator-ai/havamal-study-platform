@@ -686,7 +686,7 @@ function combineSourceFiles(sourceFiles: SourceFile[]) {
       for (const canonicalSlug of canonicalSlugs) {
         const current = map.get(canonicalSlug) ?? {
           slug: canonicalSlug,
-          internalReference: canonicalSlug.replace("passage-", "Aligned passage "),
+          internalReference: canonicalSlug.replace("passage-", "Passage "),
           section: passage.section,
           themes: [],
           editions: [],

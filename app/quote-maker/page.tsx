@@ -14,10 +14,7 @@ export default async function Page({
     <div className="page-shell">
       <header className="page-heading">
         <h1>Quote-card maker</h1>
-        <p>
-          Export exact text with mandatory edition-specific attribution. Text-first
-          layouts are the default.
-        </p>
+        <p>Choose a stanza, select its lines, and create a properly credited image.</p>
       </header>
       <QuoteMaker passages={corpus.passages} initialSlug={passage} />
     </div>
