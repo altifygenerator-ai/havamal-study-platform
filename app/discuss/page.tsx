@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { categories, getAllPassages } from "@/lib/data";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Reader Discussion",
+  description: "Discuss Hávamál stanzas, translations, sources, study methods, historical context, and personal reflection with other readers.",
+  path: "/discuss",
+  index: true,
+});
 
-export const metadata = { title: "Reader discussion" };
+
 
 export default function Page() {
   const passages = getAllPassages();

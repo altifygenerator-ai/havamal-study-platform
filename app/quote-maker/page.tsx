@@ -1,8 +1,15 @@
 import { QuoteMaker } from "@/components/quote-maker";
 import { getCompleteCorpus } from "@/lib/complete-corpus";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Hávamál Quote-Card Maker",
+  description: "Create a text-first Hávamál quote card using exact stanza wording and required edition-specific attribution.",
+  path: "/quote-maker",
+  index: true,
+});
 
-export const metadata = { title: "Quote-card maker" };
-export const dynamic = "force-dynamic";
+
+export const revalidate = 43_200;
 
 export default async function Page({
   searchParams,

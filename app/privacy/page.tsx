@@ -1,4 +1,12 @@
-export const metadata = { title: "Privacy" };
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Privacy",
+  description: "Read how The Hávamál Archive handles accounts, private notes, saved work, discussion activity, and basic site analytics.",
+  path: "/privacy",
+  index: true,
+});
+
+
 
 export default function Page() {
   return (

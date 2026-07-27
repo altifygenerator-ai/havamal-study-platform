@@ -1,8 +1,15 @@
 import { CompareTool } from "@/components/compare-tool";
 import { getCompleteCorpus } from "@/lib/complete-corpus";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Compare Hávamál Translations",
+  description: "Compare Hávamál stanzas across available English translations and Old Norse texts while preserving each edition’s wording and numbering.",
+  path: "/compare",
+  index: true,
+});
 
-export const metadata = { title: "Compare translations" };
-export const dynamic = "force-dynamic";
+
+export const revalidate = 43_200;
 
 export default async function Page({
   searchParams,

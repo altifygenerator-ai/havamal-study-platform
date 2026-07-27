@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { editionRegistry } from "@/lib/data";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Hávamál Editions and Translators",
+  description: "Browse Hávamál editions and translators, including publication details, source information, license terms, and available stanzas.",
+  path: "/editions",
+  index: true,
+});
 
-export const metadata = { title: "Editions and translators" };
+
 
 export default function Page() {
   return (

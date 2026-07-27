@@ -1,7 +1,14 @@
 import { AuthPanel } from "@/components/auth-panel";
 import { AccountManager } from "@/components/account-manager";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Sign In or Create an Account",
+  description: "Sign in to save Hávamál bookmarks, private notes, personal study guides, and quote designs.",
+  path: "/account",
+  index: false,
+});
 
-export const metadata = { title: "Account" };
+
 
 export default function Page() {
   return (

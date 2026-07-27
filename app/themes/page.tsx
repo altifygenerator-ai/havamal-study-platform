@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { getPassagesForTheme, themeRegistry } from "@/lib/data";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Hávamál Themes",
+  description: "Browse Hávamál passages by themes such as hospitality, friendship, speech, wisdom, moderation, reputation, death, memory, and runes.",
+  path: "/themes",
+  index: true,
+});
 
-export const metadata = { title: "Themes" };
+
 
 export default function Page() {
   return (

@@ -1,11 +1,38 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { categories, getAllPassages } from "@/lib/data";
+import { categories } from "@/lib/data";
+import { getCompleteCorpus } from "@/lib/complete-corpus";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { NewThreadForm } from "@/components/new-thread-form";
+import { createMetadata } from "@/lib/seo";
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return categories.map((category) => ({ slug: category.slug }));
+}
+
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const category = categories.find((item) => item.slug === slug);
+  if (!category) {
+    return createMetadata({ title: "Discussion Category Not Found", description: "This discussion category is not available.", path: `/discuss/category/${slug}`, index: false });
+  }
+  if (slug === "stanza-discussion") {
+    return createMetadata({ title: category.title, description: category.description, path: `/discuss/category/${slug}` });
+  }
+  const db = await createSupabaseServerClient();
+  let count = 0;
+  if (db) {
+    const { data: cat } = await db.from("forum_categories").select("id").eq("slug", slug).maybeSingle();
+    if (cat) {
+      const result = await db.from("forum_threads").select("id", { count: "exact", head: true }).eq("category_id", cat.id).in("status", ["open", "locked"]);
+      count = result.count ?? 0;
+    }
+  }
+  return createMetadata({ title: category.title, description: category.description, path: `/discuss/category/${slug}`, index: count > 0 });
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
@@ -14,6 +41,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   if (!category) notFound();
 
   const stanzaCategory = slug === "stanza-discussion";
+  const corpus = stanzaCategory ? await getCompleteCorpus() : null;
   let threads: Array<{ slug: string; title: string; created_at: string }> = [];
 
   if (!stanzaCategory) {
@@ -51,7 +79,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
       {stanzaCategory ? (
         <div className="passage-index">
-          {getAllPassages().map((passage) => {
+          {(corpus?.passages ?? []).map((passage) => {
             const primary = passage.editions[0];
             return (
               <Link

@@ -1,20 +1,47 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPassage } from "@/lib/data";
+import { JsonLd } from "@/components/json-ld";
+import { getCompleteCorpus } from "@/lib/complete-corpus";
 import { getStarterGuide, starterGuides } from "@/lib/study-guides";
+import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
+
+export const revalidate = 86_400;
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return starterGuides.map((guide) => ({ slug: guide.slug }));
+}
+
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const guide = getStarterGuide(slug);
+  if (!guide) {
+    return createMetadata({ title: "Study Guide Not Found", description: "This Hávamál study guide is not available.", path: `/study/${slug}`, index: false });
+  }
+  return createMetadata({
+    title: guide.title,
+    description: `${guide.description} Compare selected Hávamál passages and carry the guide’s questions into your own reading.`,
+    path: `/study/${slug}`,
+  });
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const guide = getStarterGuide(slug);
   if (!guide) notFound();
-  const passages = guide.passageSlugs.map(getPassage).filter(Boolean);
+  const corpus = await getCompleteCorpus();
+  const passageMap = new Map(corpus.passages.map((passage) => [passage.slug, passage]));
+  const passages = guide.passageSlugs.map((passageSlug) => passageMap.get(passageSlug)).filter(Boolean);
 
   return (
     <div className="page-shell">
+      <JsonLd data={breadcrumbJsonLd([
+        { name: "Home", path: "/" },
+        { name: "Study Guides", path: "/study" },
+        { name: guide.title, path: `/study/${guide.slug}` },
+      ])} />
       <header className="page-heading">
         <div>
           <div className="section-kicker">Study guide</div>

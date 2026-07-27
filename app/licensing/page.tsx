@@ -1,4 +1,12 @@
-export const metadata = { title: "Licensing" };
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Licensing and Reuse",
+  description: "Understand which Hávamál editions may be displayed, quoted, exported, or reused and how attribution and commercial restrictions are handled.",
+  path: "/licensing",
+  index: true,
+});
+
+
 
 export default function Page() {
   return (

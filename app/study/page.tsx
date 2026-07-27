@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { starterGuides } from "@/lib/study-guides";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Hávamál Study Guides",
+  description: "Follow Hávamál study guides organized around hospitality, speech, friendship, reputation, death, memory, and other recurring themes.",
+  path: "/study",
+  index: true,
+});
 
-export const metadata = { title: "Study guides" };
+
 
 export default function Page() {
   return (

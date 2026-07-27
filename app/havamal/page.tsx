@@ -1,9 +1,16 @@
 import { HavamalBrowser } from "@/components/havamal-browser";
 import { themeRegistry } from "@/lib/data";
 import { getCompleteCorpus } from "@/lib/complete-corpus";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Browse the Hávamál",
+  description: "Browse and search the Hávamál by word, phrase, theme, translator, or printed stanza number.",
+  path: "/havamal",
+  index: true,
+});
 
-export const metadata = { title: "Browse the Hávamál" };
-export const dynamic = "force-dynamic";
+
+export const revalidate = 43_200;
 
 export default async function Page() {
   const corpus = await getCompleteCorpus();

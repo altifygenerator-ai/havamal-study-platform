@@ -3,9 +3,16 @@ import manifests from "@/data/source-manifests.json";
 import { editionRegistry } from "@/lib/data";
 import { getCompleteCorpus } from "@/lib/complete-corpus";
 import type { SourceManifest } from "@/lib/types";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Hávamál Text Sources",
+  description: "Review the named editions, source providers, publication details, licenses, and text availability used by The Hávamál Archive.",
+  path: "/sources",
+  index: true,
+});
 
-export const metadata = { title: "Sources" };
-export const dynamic = "force-dynamic";
+
+export const revalidate = 43_200;
 
 const availabilityLabels: Record<SourceManifest["acquisitionStatus"], string> = {
   bundled_partial: "Selected text available",

@@ -6,8 +6,15 @@ import { getAllPassages } from "@/lib/data";
 import { excerptAround, normalizeSearchText } from "@/lib/normalize";
 import { starterGuides } from "@/lib/study-guides";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Search the Hávamál",
+  description: "Search Hávamál texts, translators, themes, commentary, discussions, and study guides.",
+  path: "/search",
+  index: false,
+});
 
-export const metadata = { title: "Search" };
+
 
 type SearchType = "texts" | "commentary" | "discussions" | "guides";
 const searchTypes: Array<{ slug: SearchType; title: string }> = [

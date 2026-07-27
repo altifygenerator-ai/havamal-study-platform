@@ -1,4 +1,12 @@
-export const metadata = { title: "Methodology" };
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Text and Alignment Methodology",
+  description: "Learn how The Hávamál Archive preserves edition-specific wording and numbering while aligning related passages for comparison.",
+  path: "/methodology",
+  index: true,
+});
+
+
 
 export default function Page() {
   return (

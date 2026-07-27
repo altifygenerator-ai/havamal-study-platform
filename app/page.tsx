@@ -1,13 +1,34 @@
 import Link from "next/link";
 import { SearchBox } from "@/components/search-box";
 import { PassageText } from "@/components/passage-text";
+import { JsonLd } from "@/components/json-ld";
 import { getStanzaOfTheDay } from "@/lib/data";
+import { siteConfig } from "@/lib/site";
+import { absoluteUrl, createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+  title: "Read and Compare the Hávamál",
+  description:
+    "Read the Hávamál across multiple translations, compare stanza wording, browse themes, create attributed quote cards, and keep private study notes.",
+  path: "/",
+});
 
 export default function HomePage() {
   const featured = getStanzaOfTheDay();
 
   return (
     <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: siteConfig.name,
+          alternateName: siteConfig.shortName,
+          url: absoluteUrl("/"),
+          description: siteConfig.description,
+          inLanguage: "en",
+        }}
+      />
       <section className="home-opening">
         <div className="home-folio-label" aria-hidden="true">
           Folio I

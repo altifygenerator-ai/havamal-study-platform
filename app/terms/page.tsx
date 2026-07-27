@@ -1,4 +1,12 @@
-export const metadata = { title: "Terms" };
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Terms of Use",
+  description: "Terms for using The Hávamál Archive, including accounts, discussion, source attribution, quote cards, and personal study tools.",
+  path: "/terms",
+  index: true,
+});
+
+
 
 export default function Page() {
   return (

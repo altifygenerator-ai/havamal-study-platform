@@ -2,13 +2,23 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DiscussionThread } from "@/components/discussion-thread";
+import { JsonLd } from "@/components/json-ld";
 import { EditionTabs } from "@/components/edition-tabs";
 import { StudyActions } from "@/components/study-actions";
 import { getAllPassages } from "@/lib/data";
 import { getCompleteCorpus, getCompletePassage } from "@/lib/complete-corpus";
+import { absoluteUrl, breadcrumbJsonLd, cleanExcerpt, createMetadata } from "@/lib/seo";
 
-export function generateStaticParams() {
-  return getAllPassages().map((passage) => ({ slug: passage.slug }));
+export const revalidate = 86_400;
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  try {
+    const corpus = await getCompleteCorpus();
+    return corpus.passages.map((passage) => ({ slug: passage.slug }));
+  } catch {
+    return getAllPassages().map((passage) => ({ slug: passage.slug }));
+  }
 }
 
 export async function generateMetadata({
@@ -18,13 +28,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const passage = await getCompletePassage(slug);
-  if (!passage) return { title: "Passage not found" };
+
+  if (!passage?.editions.length) {
+    return createMetadata({
+      title: "Hávamál Passage Not Found",
+      description: "This Hávamál passage is not available.",
+      path: `/havamal/stanza/${slug}`,
+      index: false,
+    });
+  }
+
   const primary = passage.editions[0];
-  return {
-    title: `Hávamál ${primary.passage.source_stanza_number} in ${primary.edition.translator}`,
-    description: `Read and compare ${primary.edition.translator} stanza ${primary.passage.source_stanza_number}.`,
-    alternates: { canonical: `/havamal/stanza/${slug}` },
-  };
+  const stanzaNumber = primary.passage.source_stanza_number;
+  const translator = primary.edition.translator ?? primary.edition.editor ?? "this edition";
+  const excerpt = cleanExcerpt(primary.passage.text_lines.join(" "), 118);
+
+  return createMetadata({
+    title: `Hávamál Stanza ${stanzaNumber} in ${translator}`,
+    description: `Read Hávamál stanza ${stanzaNumber} in ${translator}, compare available translations, and review its sources. ${excerpt}`,
+    path: `/havamal/stanza/${slug}`,
+    type: "article",
+  });
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
@@ -37,9 +61,42 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const previous = index > 0 ? corpus.passages[index - 1] : null;
   const next = index < corpus.passages.length - 1 ? corpus.passages[index + 1] : null;
   const primary = passage.editions[0];
+  const pagePath = `/havamal/stanza/${passage.slug}`;
+  const translator = primary.edition.translator ?? primary.edition.editor ?? "Unknown translator";
+  const stanzaNumber = primary.passage.source_stanza_number;
+  const stanzaText = primary.passage.text_lines.join("\n");
+
+  const structuredData = [
+    breadcrumbJsonLd([
+      { name: "Home", path: "/" },
+      { name: "Hávamál", path: "/havamal" },
+      { name: `Stanza ${stanzaNumber}`, path: pagePath },
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      name: `Hávamál stanza ${stanzaNumber} in ${translator}`,
+      headline: `Hávamál stanza ${stanzaNumber}`,
+      text: stanzaText,
+      inLanguage: primary.edition.language.toLowerCase().includes("english") ? "en" : undefined,
+      url: absoluteUrl(pagePath),
+      isPartOf: {
+        "@type": "CreativeWork",
+        name: "Hávamál",
+        url: absoluteUrl("/havamal"),
+      },
+      translator: {
+        "@type": "Person",
+        name: translator,
+      },
+      datePublished: String(primary.edition.publicationYear),
+      citation: primary.passage.source_reference,
+    },
+  ];
 
   return (
     <div className="page-shell">
+      <JsonLd data={structuredData} />
       <header className="page-heading">
         <div>
           <div className="section-kicker">Hávamál · {passage.section}</div>

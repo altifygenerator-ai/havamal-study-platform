@@ -1,4 +1,12 @@
-export const metadata = { title: "Accessibility" };
+import { createMetadata } from "@/lib/seo";
+export const metadata = createMetadata({
+  title: "Accessibility",
+  description: "Accessibility information for The Hávamál Archive, including keyboard navigation, readable text, focus states, and reduced-motion support.",
+  path: "/accessibility",
+  index: true,
+});
+
+
 
 export default function Page() {
   return (

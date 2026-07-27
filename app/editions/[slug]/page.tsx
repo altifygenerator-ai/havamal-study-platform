@@ -1,12 +1,48 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/json-ld";
 import { editionRegistry, getEdition } from "@/lib/data";
 import { getCompleteCorpus } from "@/lib/complete-corpus";
+import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 86_400;
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return editionRegistry.map((edition) => ({ slug: edition.slug }));
+}
+
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const edition = getEdition(slug);
+
+  if (!edition) {
+    return createMetadata({
+      title: "Edition Not Found",
+      description: "This Hávamál edition is not available.",
+      path: `/editions/${slug}`,
+      index: false,
+    });
+  }
+
+  const corpus = await getCompleteCorpus();
+  const stanzaCount = corpus.passages.filter((passage) =>
+    passage.editions.some(({ edition: item }) => item.slug === slug),
+  ).length;
+  const name = edition.translator ?? edition.editor ?? edition.editionTitle;
+
+  return createMetadata({
+    title: `${name} Hávamál Translation (${edition.publicationYear})`,
+    description: `Read about ${name}’s ${edition.publicationYear} Hávamál edition, including publication details, source information, license terms, and ${stanzaCount || "available"} stanzas.`,
+    path: `/editions/${slug}`,
+    index: edition.enabled && edition.fullTextDisplayAllowed && stanzaCount > 0,
+  });
 }
 
 function availability(value: boolean, yes: string, no: string) {
@@ -23,8 +59,17 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     passage.editions.some(({ edition: passageEdition }) => passageEdition.slug === slug),
   );
 
+  const editionName = edition.translator ?? edition.editor ?? edition.editionTitle;
+
   return (
     <div className="page-shell">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Editions", path: "/editions" },
+          { name: editionName, path: `/editions/${edition.slug}` },
+        ])}
+      />
       <header className="page-heading">
         <div>
           <div className="section-kicker">Edition</div>
