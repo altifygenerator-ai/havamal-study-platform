@@ -154,13 +154,28 @@ export default async function Page({
           </h1>
         </div>
         {passage.editions.length > 1 ? (
-          <p>{passage.editions.length} editions are available for comparison.</p>
+          <p>{passage.editions.length} translations are aligned to this passage.</p>
         ) : null}
       </header>
 
       <div className="stanza-layout">
         <section>
           <EditionTabs passage={passage} />
+
+          <nav className="mobile-passage-actions" aria-label="Passage actions">
+            {previous ? (
+              <Link href={`/havamal/stanza/${previous.slug}`}>← Previous</Link>
+            ) : (
+              <span>Beginning</span>
+            )}
+            <Link href={`/compare?passage=${passage.slug}`}>Compare</Link>
+            <Link href={`/quote-maker?passage=${passage.slug}`}>Quote</Link>
+            {next ? (
+              <Link href={`/havamal/stanza/${next.slug}`}>Next →</Link>
+            ) : (
+              <span>End</span>
+            )}
+          </nav>
 
           <AllEditionTexts
             excludeEditionSlug={primary.edition.slug}
@@ -225,7 +240,7 @@ export default async function Page({
         <aside className="stanza-meta">
           <div className="section-kicker">Passage details</div>
           <dl>
-            <dt>Archive reference</dt>
+            <dt>Passage</dt>
             <dd>{passage.internalReference}</dd>
             <dt>Edition numbers</dt>
             <dd>

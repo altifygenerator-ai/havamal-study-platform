@@ -210,9 +210,9 @@ export default async function Page({
           {!count && (
             <div className="empty-state">
               {type === "commentary" && !db
-                ? "Connect Supabase to search reviewed commentary."
+                ? "Commentary search is temporarily unavailable."
                 : type === "discussions" && !db
-                  ? "Connect Supabase to search reader discussion."
+                  ? "Discussion search is temporarily unavailable."
                   : `No published ${searchTypes.find((item) => item.slug === type)?.title.toLowerCase()} matched this search.`}
             </div>
           )}

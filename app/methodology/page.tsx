@@ -38,7 +38,9 @@ export default function Page() {
       <p>
         Related passages are placed together even when their printed numbers differ. When
         one edition splits a passage that another keeps together, the comparison reflects
-        that difference rather than forcing a false one-to-one match.
+        that difference rather than forcing a false one-to-one match. If a cross-edition
+        match is not clear enough to support, the stanza remains readable in its own edition
+        without being presented as an equivalent passage.
       </p>
 
       <h2>Old Norse text</h2>

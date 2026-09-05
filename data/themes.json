@@ -53,5 +53,15 @@
     "slug": "runes",
     "title": "Runes",
     "description": "Passages explicitly concerning runes, knowledge, and magical counsel."
+  },
+  {
+    "slug": "friendship",
+    "title": "Friendship and Trust",
+    "description": "Friendship, trust, reciprocity, loyalty, and the work of maintaining bonds."
+  },
+  {
+    "slug": "generosity",
+    "title": "Generosity and Gifts",
+    "description": "Giving, receiving, reciprocity, hospitality, and the social meaning of gifts."
   }
 ]

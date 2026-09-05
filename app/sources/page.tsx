@@ -1,7 +1,7 @@
 import Link from "next/link";
 import manifests from "@/data/source-manifests.json";
 import { editionRegistry } from "@/lib/data";
-import { getCompleteCorpus } from "@/lib/complete-corpus";
+import { getCompleteCorpus, getCompleteEditionSource } from "@/lib/complete-corpus";
 import type { SourceManifest } from "@/lib/types";
 import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
@@ -22,15 +22,17 @@ const availabilityLabels: Record<SourceManifest["acquisitionStatus"], string> = 
 };
 
 export default async function Page() {
-  const corpus = await getCompleteCorpus();
+  await getCompleteCorpus();
   const sourceManifests = manifests as SourceManifest[];
-  const stanzaCounts = new Map<string, number>();
-
-  for (const passage of corpus.passages) {
-    for (const { edition } of passage.editions) {
-      stanzaCounts.set(edition.slug, (stanzaCounts.get(edition.slug) ?? 0) + 1);
-    }
-  }
+  const sourceFiles = await Promise.all(
+    editionRegistry.map((edition) => getCompleteEditionSource(edition.slug)),
+  );
+  const stanzaCounts = new Map(
+    editionRegistry.map((edition, index) => [
+      edition.slug,
+      sourceFiles[index]?.passages.length ?? 0,
+    ]),
+  );
 
   return (
     <div className="page-shell">

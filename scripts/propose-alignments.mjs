@@ -6,6 +6,15 @@ const root = process.cwd();
 const sourceDir = path.join(root, "data", "sources");
 const stagingDir = path.join(root, "data", "source-staging");
 const requested = process.argv.find((arg) => arg.startsWith("--edition="))?.split("=")[1];
+const reviewedAlignmentData = JSON.parse(
+  await readFile(path.join(root, "data", "reviewed-alignment-map.json"), "utf8"),
+);
+const reviewedAlignmentLookup = new Map(
+  Object.entries(reviewedAlignmentData.editions).map(([editionSlug, rows]) => [
+    editionSlug,
+    new Map(rows.map((row) => [String(row.sourceStanza), row])),
+  ]),
+);
 const apply = process.argv.includes("--apply");
 const sourceMap = new Map();
 for (const directory of [sourceDir, stagingDir]) {
@@ -60,7 +69,35 @@ for (const entry of sources) {
   const editionSlug = entry.file.edition.slug;
   if (editionSlug === "bellows-1923" || (requested && requested !== editionSlug)) continue;
   const proposals = [];
+  const reviewedRows = reviewedAlignmentLookup.get(editionSlug);
   const updatedPassages = entry.file.passages.map((passage, sourceIndex) => {
+    const reviewed = reviewedRows?.get(String(passage.source_stanza_number));
+    if (reviewed) {
+      const canonicalSlugs = reviewed.bellows.map(
+        (number) => `passage-${String(number).padStart(3, "0")}`,
+      );
+      const proposal = {
+        edition_slug: editionSlug,
+        source_stanza_number: passage.source_stanza_number,
+        proposed_canonical_slug: canonicalSlugs[0],
+        proposed_canonical_span: canonicalSlugs.length > 1 ? canonicalSlugs : undefined,
+        confidence: "exact",
+        relation: reviewed.relation,
+        status: "reviewed_structural_map",
+      };
+      proposals.push(proposal);
+      if (!apply) return passage;
+      return {
+        ...passage,
+        canonical_slug: canonicalSlugs[0],
+        canonical_span: canonicalSlugs.length > 1 ? canonicalSlugs : undefined,
+        alignment_confidence: "exact",
+        alignment_relation: reviewed.relation,
+        alignment_note: "Applied from the reviewed edition-specific structural alignment map.",
+        review_status: passage.review_status === "published" ? "published" : "approved",
+      };
+    }
+
     const sourceFeatures = features(passage);
     const ranked = anchors
       .map((anchor, anchorIndex) => {

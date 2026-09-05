@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { getPassagesForTheme, themeRegistry } from "@/lib/data";
+import { themeRegistry } from "@/lib/data";
+import { getCompleteCorpus } from "@/lib/complete-corpus";
 import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Hávamál Themes",
@@ -10,7 +11,17 @@ export const metadata = createMetadata({
 
 
 
-export default function Page() {
+export const revalidate = 86_400;
+
+export default async function Page() {
+  const corpus = await getCompleteCorpus();
+  const counts = new Map(
+    themeRegistry.map((theme) => [
+      theme.slug,
+      corpus.passages.filter((passage) => passage.themes.includes(theme.slug)).length,
+    ]),
+  );
+
   return (
     <div className="page-shell">
       <header className="page-heading">
@@ -21,7 +32,7 @@ export default function Page() {
         {themeRegistry.map((theme) => (
           <article className="flat-card" key={theme.slug}>
             <div className="section-kicker">
-              {getPassagesForTheme(theme.slug).length} passages
+              {counts.get(theme.slug) ?? 0} passages
             </div>
             <h2>{theme.title}</h2>
             <p>{theme.description}</p>

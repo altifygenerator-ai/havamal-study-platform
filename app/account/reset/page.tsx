@@ -14,7 +14,7 @@ export default function Page() {
     setMessage("");
 
     if (!supabase) {
-      setMessage("Connect Supabase to reset passwords.");
+      setMessage("Password reset is temporarily unavailable.");
       return;
     }
 

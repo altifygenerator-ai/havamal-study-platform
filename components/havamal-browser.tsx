@@ -50,6 +50,12 @@ export function HavamalBrowser({
     });
   }, [allPassages, query, theme]);
 
+  function clearFilters() {
+    setQuery("");
+    setTheme("");
+    setMessage("");
+  }
+
   function jumpToPrintedNumber(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const value = new FormData(event.currentTarget)
@@ -74,11 +80,6 @@ export function HavamalBrowser({
 
   return (
     <>
-      {corpus.state !== "ready" ? (
-        <div className={`corpus-load-state browser-corpus-state ${corpus.state}`} role="status">
-          <strong>{corpus.message}</strong>
-        </div>
-      ) : null}
       <section className="browser-tools" aria-label="Hávamál browser controls">
         <label>
           Filter text
@@ -132,10 +133,16 @@ export function HavamalBrowser({
         </form>
       </section>
 
-      <p aria-live="polite" className="muted">
-        {message ||
-          `${visible.length} passage${visible.length === 1 ? "" : "s"}`}
-      </p>
+      <div className="browser-results-bar">
+        <p aria-live="polite" className="muted">
+          {message || `${visible.length} passage${visible.length === 1 ? "" : "s"}`}
+        </p>
+        {(query || theme) && (
+          <button className="text-action" type="button" onClick={clearFilters}>
+            Clear filters
+          </button>
+        )}
+      </div>
 
       <div className={view === "reading" ? "browser-reading" : "passage-index"}>
         {visible.map((item) => {

@@ -203,11 +203,6 @@ export function QuoteMaker({
 
   return (
     <>
-      {corpus.state !== "ready" ? (
-        <div className={`corpus-load-state quote-corpus-state ${corpus.state}`} role="status">
-          <strong>{corpus.message}</strong>
-        </div>
-      ) : null}
       <div className="quote-maker-grid">
       <form className="quote-controls" onSubmit={(event) => event.preventDefault()}>
         <label>

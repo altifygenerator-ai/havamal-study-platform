@@ -3,6 +3,7 @@ import "server-only";
 import { inflateRawSync } from "node:zlib";
 import editionsJson from "@/data/editions.json";
 import manifestsJson from "@/data/source-manifests.json";
+import reviewedAlignmentsJson from "@/data/reviewed-alignment-map.json";
 import type {
   AlignmentConfidence,
   AlignmentRelation,
@@ -41,6 +42,7 @@ const manifests = manifestsJson as SourceManifest[];
 const CACHE_TTL_MS = 1000 * 60 * 60 * 12;
 let memoryCache: { expiresAt: number; value: CompleteCorpusResult } | null = null;
 let pending: Promise<CompleteCorpusResult> | null = null;
+let sourceFileCache: Map<string, SourceFile> | null = null;
 
 const entityMap: Record<string, string> = {
   amp: "&",
@@ -182,16 +184,19 @@ function sectionForAnchor(number: number) {
 function themesFor(lines: string[]) {
   const text = lines.join(" ").toLowerCase();
   const map: Array<[string, RegExp]> = [
-    ["hospitality", /guest|host|feast|food|drink|door|house/],
-    ["friendship", /friend|trust|gift/],
-    ["speech", /speech|speak|word|tongue|silence/],
-    ["wisdom", /wise|wisdom|wit|knowledge|counsel/],
-    ["moderation", /measure|drunk|ale|beer|mead/],
-    ["reputation", /fame|renown|praise|name/],
-    ["death", /die|death|corpse|pyre/],
+    ["hospitality", /guest|host|feast|food|clothes|clothing|door|house|shelter|welcome/],
+    ["watchfulness", /watch|wary|cautious|beware|foe|danger|look|heed/],
+    ["friendship", /friend|trust|companion|fellow|gift/],
+    ["speech", /speech|speak|word|tongue|silent|silence|listen|boast/],
+    ["wisdom", /wise|wisdom|wit|knowledge|counsel|learn|understanding/],
+    ["drink", /drink|drunk|ale|beer|mead|cup/],
+    ["reputation", /fame|renown|praise|name|reputation|memory/],
+    ["life-and-death", /die|death|dead|corpse|pyre|grave|sick|life/],
     ["runes", /rune/],
-    ["travel", /wander|road|journey|farer|ship/],
-    ["generosity", /give|gift|generous/],
+    ["travel", /wander|road|journey|farer|ship|travel|mountain|firth/],
+    ["generosity", /give|gift|generous|liberal|giver/],
+    ["wealth", /wealth|gold|rich|riches|poor|poverty|property|cattle/],
+    ["kinship", /kin|kinsman|brother|sister|son|daughter|child|children|father|mother/],
   ];
   return map.filter(([, pattern]) => pattern.test(text)).map(([slug]) => slug);
 }
@@ -502,130 +507,119 @@ function confidenceFor(score: number): AlignmentConfidence {
 }
 
 /**
- * Monotonic sequence alignment permits one-to-one, one-to-two and two-to-one
- * relationships. It is a finding aid, never a claim that Bellows numbering is
- * academically authoritative. Relocated closing material is matched separately.
+ * Bellows supplies only the internal comparison anchor.  Thorpe and Bray have
+ * reviewed structural maps because their printed divisions are known to differ
+ * at several points.  Other editions are matched by wording only and are never
+ * forced into a canonical passage when the evidence is weak.
  */
-function alignToBellows(target: ParsedRecord[], anchors: ParsedRecord[]) {
-  const relocated = new Map<number, AlignmentAssignment>();
-  let workingTarget = target;
+function slugForBellows(number: number) {
+  return `passage-${String(number).padStart(3, "0")}`;
+}
 
-  if (target.length && target[target.length - 1]?.number === 166) {
-    const final = target[target.length - 1];
-    const ranked = anchors
-      .map((anchor) => ({ anchor, score: similarity(final.lines, anchor.lines) }))
-      .sort((left, right) => right.score - left.score);
-    if (ranked[0] && ranked[0].score >= 0.28 && ranked[0].anchor.number < 150) {
-      relocated.set(final.number, {
-        canonicalSlugs: [`passage-${String(ranked[0].anchor.number).padStart(3, "0")}`],
-        confidence: confidenceFor(ranked[0].score),
-        relation: "one_to_one",
-        note: `Relocated closing stanza matched by text to Bellows ${ranked[0].anchor.number}; printed number ${final.number} is preserved.`,
-      });
-      workingTarget = target.slice(0, -1);
-    }
-  }
+function exactAssignment(
+  bellowsNumbers: number[],
+  relation: AlignmentRelation = bellowsNumbers.length > 1 ? "one_to_many" : "one_to_one",
+  note = "Reviewed edition alignment; printed numbering is preserved.",
+): AlignmentAssignment {
+  return {
+    canonicalSlugs: bellowsNumbers.map(slugForBellows),
+    confidence: "exact",
+    relation,
+    note,
+  };
+}
 
-  const n = workingTarget.length;
-  const m = anchors.length;
-  const dp = Array.from({ length: n + 1 }, () => Array<number>(m + 1).fill(Number.NEGATIVE_INFINITY));
-  const back = Array.from({ length: n + 1 }, () => Array<{ di: number; dj: number; score: number } | null>(m + 1).fill(null));
-  dp[0][0] = 0;
+type ReviewedAlignmentRow = {
+  sourceStanza: number;
+  bellows: number[];
+  relation: AlignmentRelation;
+};
 
-  function update(i: number, j: number, ni: number, nj: number, value: number, score: number) {
-    if (value > dp[ni][nj]) {
-      dp[ni][nj] = value;
-      back[ni][nj] = { di: ni - i, dj: nj - j, score };
-    }
-  }
+type ReviewedAlignmentData = {
+  schemaVersion: number;
+  anchorEdition: string;
+  editions: Record<string, ReviewedAlignmentRow[]>;
+};
 
-  for (let i = 0; i <= n; i += 1) {
-    for (let j = 0; j <= m; j += 1) {
-      if (!Number.isFinite(dp[i][j])) continue;
-      if (i < n && j < m) {
-        const score = similarity(workingTarget[i].lines, anchors[j].lines);
-        update(i, j, i + 1, j + 1, dp[i][j] + score - 0.16, score);
-      }
-      if (i < n && j + 1 < m) {
-        const score = similarity(workingTarget[i].lines, [
-          ...anchors[j].lines,
-          ...anchors[j + 1].lines,
-        ]);
-        update(i, j, i + 1, j + 2, dp[i][j] + score - 0.28, score);
-      }
-      if (i + 1 < n && j < m) {
-        const score = similarity(
-          [...workingTarget[i].lines, ...workingTarget[i + 1].lines],
-          anchors[j].lines,
-        );
-        update(i, j, i + 2, j + 1, dp[i][j] + score - 0.28, score);
-      }
-      if (i < n) update(i, j, i + 1, j, dp[i][j] - 0.62, 0);
-      if (j < m) update(i, j, i, j + 1, dp[i][j] - 0.62, 0);
-    }
-  }
+const reviewedAlignmentData = reviewedAlignmentsJson as ReviewedAlignmentData;
+const reviewedAlignmentLookup = new Map(
+  Object.entries(reviewedAlignmentData.editions).map(([editionSlug, rows]) => [
+    editionSlug,
+    new Map(rows.map((row) => [row.sourceStanza, row])),
+  ]),
+);
 
-  const assignments = new Map<number, AlignmentAssignment>();
-  let i = n;
-  let j = m;
-  const steps: Array<{ startI: number; startJ: number; di: number; dj: number; score: number }> = [];
-  while (i > 0 || j > 0) {
-    const step = back[i][j];
-    if (!step) break;
-    steps.push({ startI: i - step.di, startJ: j - step.dj, ...step });
-    i -= step.di;
-    j -= step.dj;
-  }
+function reviewedAlignmentForEdition(editionSlug: string, number: number) {
+  const row = reviewedAlignmentLookup.get(editionSlug)?.get(number);
+  if (!row) return null;
+  return exactAssignment(
+    row.bellows,
+    row.relation,
+    `Reviewed ${editionSlug} structural alignment; printed stanza ${number} is preserved.`,
+  );
+}
 
-  for (const step of steps.reverse()) {
-    if (step.di === 1 && step.dj === 1) {
-      const targetRecord = workingTarget[step.startI];
-      const anchor = anchors[step.startJ];
-      assignments.set(targetRecord.number, {
-        canonicalSlugs: [`passage-${String(anchor.number).padStart(3, "0")}`],
-        confidence: confidenceFor(step.score),
-        relation: "one_to_one",
-        note: `Aligned by sequence and wording to Bellows ${anchor.number}; printed numbering remains ${targetRecord.number}.`,
-      });
-    } else if (step.di === 1 && step.dj === 2) {
-      const targetRecord = workingTarget[step.startI];
-      const anchorA = anchors[step.startJ];
-      const anchorB = anchors[step.startJ + 1];
-      assignments.set(targetRecord.number, {
-        canonicalSlugs: [anchorA, anchorB].map(
-          (anchor) => `passage-${String(anchor.number).padStart(3, "0")}`,
-        ),
-        confidence: confidenceFor(step.score),
-        relation: "one_to_many",
-        note: `This printed stanza spans material aligned with Bellows ${anchorA.number}–${anchorB.number}.`,
-      });
-    } else if (step.di === 2 && step.dj === 1) {
-      const targetA = workingTarget[step.startI];
-      const targetB = workingTarget[step.startI + 1];
-      const anchor = anchors[step.startJ];
-      for (const targetRecord of [targetA, targetB]) {
-        assignments.set(targetRecord.number, {
-          canonicalSlugs: [`passage-${String(anchor.number).padStart(3, "0")}`],
-          confidence: confidenceFor(step.score),
-          relation: "many_to_one",
-          note: `Printed stanzas ${targetA.number}–${targetB.number} share material aligned with Bellows ${anchor.number}.`,
-        });
-      }
-    }
-  }
+function strictTextAlignment(record: ParsedRecord, anchors: ParsedRecord[]): AlignmentAssignment {
+  const candidates: Array<{
+    canonicalSlugs: string[];
+    relation: AlignmentRelation;
+    score: number;
+  }> = [];
 
-  for (const record of workingTarget) {
-    if (assignments.has(record.number)) continue;
-    const projected = Math.max(1, Math.min(165, Math.round((record.number / Math.max(n, 1)) * 165)));
-    assignments.set(record.number, {
-      canonicalSlugs: [`passage-${String(projected).padStart(3, "0")}`],
-      confidence: "uncertain",
-      relation: "uncertain",
-      note: "Provisional positional alignment; review against the printed edition before scholarly citation.",
+  for (let index = 0; index < anchors.length; index += 1) {
+    const anchor = anchors[index];
+    candidates.push({
+      canonicalSlugs: [slugForBellows(anchor.number)],
+      relation: "one_to_one",
+      score: similarity(record.lines, anchor.lines),
     });
+    const next = anchors[index + 1];
+    if (next) {
+      candidates.push({
+        canonicalSlugs: [slugForBellows(anchor.number), slugForBellows(next.number)],
+        relation: "one_to_many",
+        score: similarity(record.lines, [...anchor.lines, ...next.lines]),
+      });
+    }
   }
 
-  for (const [number, assignment] of relocated) assignments.set(number, assignment);
+  candidates.sort((left, right) => right.score - left.score);
+  const best = candidates[0];
+  const runnerUp = candidates[1];
+  const margin = best && runnerUp ? best.score - runnerUp.score : 0;
+
+  // These thresholds are intentionally conservative.  A source stanza that
+  // cannot be distinguished from its runner-up remains unaligned rather than
+  // being displayed beside the wrong passage.
+  if (best && best.score >= 0.48 && margin >= 0.055) {
+    return {
+      canonicalSlugs: best.canonicalSlugs,
+      confidence: "high",
+      relation: best.relation,
+      note: `Wording match accepted with score ${best.score.toFixed(3)} and margin ${margin.toFixed(3)}; printed numbering is preserved.`,
+    };
+  }
+
+  return {
+    canonicalSlugs: [],
+    confidence: "uncertain",
+    relation: "uncertain",
+    note: best
+      ? `No public comparison alignment: best wording score ${best.score.toFixed(3)} with margin ${margin.toFixed(3)}.`
+      : "No public comparison alignment was found.",
+  };
+}
+
+function alignToBellows(
+  editionSlug: string,
+  target: ParsedRecord[],
+  anchors: ParsedRecord[],
+) {
+  const assignments = new Map<number, AlignmentAssignment>();
+  for (const record of target) {
+    const reviewed = reviewedAlignmentForEdition(editionSlug, record.number);
+    assignments.set(record.number, reviewed ?? strictTextAlignment(record, anchors));
+  }
   return assignments;
 }
 
@@ -636,7 +630,9 @@ function buildSourceFile(
   anchorRecords: ParsedRecord[],
 ): SourceFile {
   const isAnchor = edition.slug === "bellows-1923";
-  const alignments = isAnchor ? new Map<number, AlignmentAssignment>() : alignToBellows(records, anchorRecords);
+  const alignments = isAnchor
+    ? new Map<number, AlignmentAssignment>()
+    : alignToBellows(edition.slug, records, anchorRecords);
   const runtimeEdition: EditionRegistryEntry = { ...edition, enabled: true };
 
   return {
@@ -650,16 +646,25 @@ function buildSourceFile(
             relation: "one_to_one" as const,
             note: "Bellows supplies the internal comparison anchor only; its division is not presented as authoritative.",
           }
-        : alignments.get(record.number)!;
+        : alignments.get(record.number) ?? {
+            canonicalSlugs: [],
+            confidence: "uncertain" as const,
+            relation: "uncertain" as const,
+            note: "No reviewed alignment is available.",
+          };
+      const canonicalSlug = assignment.canonicalSlugs[0] ?? "";
+      const anchorNumber = canonicalSlug
+        ? Number(canonicalSlug.replace("passage-", ""))
+        : Math.max(1, Math.min(165, record.number));
       return {
         edition_slug: edition.slug,
         source_stanza_number: String(record.number),
-        canonical_slug: assignment.canonicalSlugs[0],
+        canonical_slug: canonicalSlug,
         ...(assignment.canonicalSlugs.length > 1 ? { canonical_span: assignment.canonicalSlugs } : {}),
         alignment_confidence: assignment.confidence,
         alignment_relation: assignment.relation,
         alignment_note: assignment.note,
-        section: sectionForAnchor(Number(assignment.canonicalSlugs[0].replace("passage-", ""))),
+        section: sectionForAnchor(anchorNumber),
         text_lines: record.lines.map(cleanLine).filter(Boolean),
         ...(record.oldNorseLines?.length
           ? { old_norse_lines: record.oldNorseLines.map(cleanLine).filter(Boolean) }
@@ -669,7 +674,10 @@ function buildSourceFile(
         source_page: null,
         source_reference: manifest.verificationUrl,
         license_reference: manifest.licenseUrl,
-        review_status: "published",
+        review_status:
+          isAnchor || assignment.confidence === "exact" || assignment.confidence === "high"
+            ? "published"
+            : "needs_review",
         themes: themesFor(record.lines),
       } satisfies SourcePassage;
     }),
@@ -680,6 +688,14 @@ function combineSourceFiles(sourceFiles: SourceFile[]) {
   const map = new Map<string, CanonicalPassage>();
   for (const file of sourceFiles) {
     for (const passage of file.passages) {
+      if (
+        passage.review_status !== "published" ||
+        !passage.canonical_slug ||
+        passage.alignment_confidence === "uncertain" ||
+        passage.alignment_relation === "uncertain"
+      ) {
+        continue;
+      }
       const canonicalSlugs = passage.canonical_span?.length
         ? passage.canonical_span
         : [passage.canonical_slug];
@@ -692,8 +708,34 @@ function combineSourceFiles(sourceFiles: SourceFile[]) {
           editions: [],
         };
         current.themes = [...new Set([...current.themes, ...passage.themes])];
-        if (!current.editions.some(({ edition }) => edition.slug === file.edition.slug)) {
+        const existingIndex = current.editions.findIndex(
+          ({ edition }) => edition.slug === file.edition.slug,
+        );
+        if (existingIndex < 0) {
           current.editions.push({ edition: file.edition, passage });
+        } else if (passage.alignment_relation === "many_to_one") {
+          const existing = current.editions[existingIndex].passage;
+          if (existing.alignment_relation === "many_to_one") {
+            const numbers = [existing.source_stanza_number, passage.source_stanza_number]
+              .flatMap((value) => value.split(/[–-]/))
+              .map((value) => Number(value))
+              .filter(Number.isFinite)
+              .sort((left, right) => left - right);
+            current.editions[existingIndex] = {
+              edition: file.edition,
+              passage: {
+                ...existing,
+                source_stanza_number: `${numbers[0]}–${numbers[numbers.length - 1]}`,
+                text_lines: [...existing.text_lines, ...passage.text_lines],
+                old_norse_lines: [
+                  ...(existing.old_norse_lines ?? []),
+                  ...(passage.old_norse_lines ?? []),
+                ],
+                footnotes: [...existing.footnotes, ...passage.footnotes],
+                themes: [...new Set([...existing.themes, ...passage.themes])],
+              },
+            };
+          }
         }
         map.set(canonicalSlug, current);
       }
@@ -756,6 +798,7 @@ async function loadCorpusFresh(): Promise<CompleteCorpusResult> {
   }
 
   if (anchorRecords.length < 150) {
+    sourceFileCache = new Map(loaded);
     return {
       passages: getAllPassages(),
       statuses,
@@ -832,6 +875,7 @@ async function loadCorpusFresh(): Promise<CompleteCorpusResult> {
     }
   });
 
+  sourceFileCache = new Map(loaded);
   return {
     passages: combineSourceFiles([...loaded.values()]),
     statuses,
@@ -857,4 +901,9 @@ export async function getCompleteCorpus(options?: { force?: boolean }) {
 export async function getCompletePassage(slug: string) {
   const corpus = await getCompleteCorpus();
   return corpus.passages.find((passage) => passage.slug === slug);
+}
+
+export async function getCompleteEditionSource(slug: string) {
+  await getCompleteCorpus();
+  return sourceFileCache?.get(slug) ?? getSourceFiles().find((file) => file.edition.slug === slug) ?? null;
 }

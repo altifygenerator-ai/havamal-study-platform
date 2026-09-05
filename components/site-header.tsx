@@ -1,15 +1,7 @@
 import Link from "next/link";
 import { AccountUtility } from "@/components/account-utility";
 import { SearchBox } from "@/components/search-box";
-
-const navItems = [
-  ["/havamal", "Texts"],
-  ["/editions", "Editions"],
-  ["/themes", "Themes"],
-  ["/compare", "Compare"],
-  ["/study", "Study"],
-  ["/discuss", "Discussion"],
-] as const;
+import { PrimaryNav } from "@/components/primary-nav";
 
 export function SiteHeader() {
   return (
@@ -19,7 +11,7 @@ export function SiteHeader() {
       </a>
 
       <div className="utility-strip">
-        <p>Free to read · Built for close study</p>
+        <p>Free to read</p>
         <div className="utility-links">
           <Link href="/sources">Sources</Link>
           <AccountUtility />
@@ -45,18 +37,7 @@ export function SiteHeader() {
 
       <div className="archive-index-bar">
         <span aria-hidden="true">Index</span>
-        <nav className="archive-nav" aria-label="Primary navigation">
-          {navItems.map(([href, label], index) => (
-            <Link href={href} key={href}>
-              <small>{String(index + 1).padStart(2, "0")}</small>
-              {label}
-            </Link>
-          ))}
-          <Link href="/quote-maker">
-            <small>07</small>
-            Quote maker
-          </Link>
-        </nav>
+        <PrimaryNav />
       </div>
     </header>
   );

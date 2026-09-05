@@ -65,7 +65,11 @@ export function AccountUtility() {
   }
 
   if (state.loading) {
-    return <span className="account-utility-status">Checking account…</span>;
+    return (
+      <span className="account-utility account-utility-pending" aria-live="polite">
+        <Link href="/account">Sign in</Link>
+      </span>
+    );
   }
 
   if (!state.signedIn) {

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/json-ld";
 import { editionRegistry, getEdition } from "@/lib/data";
-import { getCompleteCorpus } from "@/lib/complete-corpus";
+import { getCompleteCorpus, getCompleteEditionSource } from "@/lib/complete-corpus";
 import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 
 export const revalidate = 86_400;
@@ -31,10 +31,9 @@ export async function generateMetadata({
     });
   }
 
-  const corpus = await getCompleteCorpus();
-  const stanzaCount = corpus.passages.filter((passage) =>
-    passage.editions.some(({ edition: item }) => item.slug === slug),
-  ).length;
+  await getCompleteCorpus();
+  const source = await getCompleteEditionSource(slug);
+  const stanzaCount = source?.passages.length ?? 0;
   const name = edition.translator ?? edition.editor ?? edition.editionTitle;
 
   return createMetadata({
@@ -54,10 +53,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const edition = getEdition(slug);
   if (!edition) notFound();
 
-  const corpus = await getCompleteCorpus();
-  const passages = corpus.passages.filter((passage) =>
-    passage.editions.some(({ edition: passageEdition }) => passageEdition.slug === slug),
-  );
+  await getCompleteCorpus();
+  const source = await getCompleteEditionSource(slug);
+  const passages = source?.passages ?? [];
 
   const editionName = edition.translator ?? edition.editor ?? edition.editionTitle;
 
@@ -128,19 +126,20 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       {passages.length ? (
         <div className="passage-index">
           {passages.map((passage) => {
-            const match = passage.editions.find(
-              ({ edition: passageEdition }) => passageEdition.slug === slug,
-            );
-            if (!match) return null;
+            const aligned =
+              passage.review_status === "published" &&
+              Boolean(passage.canonical_slug) &&
+              passage.alignment_confidence !== "uncertain" &&
+              passage.alignment_relation !== "uncertain";
             return (
               <Link
-                href={`/havamal/stanza/${passage.slug}`}
+                href={`/editions/${slug}/stanza/${passage.source_stanza_number}`}
                 className="passage-index-row"
-                key={passage.slug}
+                key={`${slug}-${passage.source_stanza_number}`}
               >
-                <span>{passage.internalReference}</span>
-                <strong>Stanza {match.passage.source_stanza_number}</strong>
-                <span>{match.passage.section}</span>
+                <span>Stanza {passage.source_stanza_number}</span>
+                <strong>{passage.text_lines[0] || "Open stanza"}</strong>
+                <span>{aligned ? "Comparison available" : "Edition text"}</span>
               </Link>
             );
           })}

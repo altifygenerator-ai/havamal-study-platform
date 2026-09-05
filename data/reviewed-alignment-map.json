@@ -1,0 +1,2323 @@
+{
+  "schemaVersion": 1,
+  "anchorEdition": "bellows-1923",
+  "editions": {
+    "thorpe-1866": [
+      {
+        "sourceStanza": 1,
+        "bellows": [
+          1
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 2,
+        "bellows": [
+          2
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 3,
+        "bellows": [
+          3
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 4,
+        "bellows": [
+          4
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 5,
+        "bellows": [
+          5
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 6,
+        "bellows": [
+          6
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 7,
+        "bellows": [
+          7
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 8,
+        "bellows": [
+          8
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 9,
+        "bellows": [
+          9
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 10,
+        "bellows": [
+          10
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 11,
+        "bellows": [
+          11
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 12,
+        "bellows": [
+          12
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 13,
+        "bellows": [
+          13
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 14,
+        "bellows": [
+          14
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 15,
+        "bellows": [
+          15
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 16,
+        "bellows": [
+          16
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 17,
+        "bellows": [
+          17
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 18,
+        "bellows": [
+          18
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 19,
+        "bellows": [
+          19
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 20,
+        "bellows": [
+          20
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 21,
+        "bellows": [
+          21
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 22,
+        "bellows": [
+          22
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 23,
+        "bellows": [
+          23
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 24,
+        "bellows": [
+          24
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 25,
+        "bellows": [
+          25
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 26,
+        "bellows": [
+          26
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 27,
+        "bellows": [
+          27
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 28,
+        "bellows": [
+          28
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 29,
+        "bellows": [
+          29
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 30,
+        "bellows": [
+          30
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 31,
+        "bellows": [
+          31
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 32,
+        "bellows": [
+          32
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 33,
+        "bellows": [
+          33
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 34,
+        "bellows": [
+          34
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 35,
+        "bellows": [
+          35
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 36,
+        "bellows": [
+          36
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 37,
+        "bellows": [
+          37
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 38,
+        "bellows": [
+          38
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 39,
+        "bellows": [
+          40
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 40,
+        "bellows": [
+          39
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 41,
+        "bellows": [
+          41
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 42,
+        "bellows": [
+          42
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 43,
+        "bellows": [
+          43
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 44,
+        "bellows": [
+          44
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 45,
+        "bellows": [
+          45
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 46,
+        "bellows": [
+          46
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 47,
+        "bellows": [
+          47
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 48,
+        "bellows": [
+          48
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 49,
+        "bellows": [
+          49
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 50,
+        "bellows": [
+          50
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 51,
+        "bellows": [
+          51
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 52,
+        "bellows": [
+          52
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 53,
+        "bellows": [
+          53
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 54,
+        "bellows": [
+          54
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 55,
+        "bellows": [
+          55
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 56,
+        "bellows": [
+          56
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 57,
+        "bellows": [
+          57
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 58,
+        "bellows": [
+          58
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 59,
+        "bellows": [
+          59
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 60,
+        "bellows": [
+          60
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 61,
+        "bellows": [
+          61
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 62,
+        "bellows": [
+          63
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 63,
+        "bellows": [
+          62
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 64,
+        "bellows": [
+          64
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 65,
+        "bellows": [
+          65
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 66,
+        "bellows": [
+          66
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 67,
+        "bellows": [
+          67
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 68,
+        "bellows": [
+          68
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 69,
+        "bellows": [
+          69
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 70,
+        "bellows": [
+          70
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 71,
+        "bellows": [
+          71
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 72,
+        "bellows": [
+          72
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 73,
+        "bellows": [
+          73
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 74,
+        "bellows": [
+          74
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 75,
+        "bellows": [
+          75
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 76,
+        "bellows": [
+          77
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 77,
+        "bellows": [
+          78
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 78,
+        "bellows": [
+          76
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 79,
+        "bellows": [
+          80
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 80,
+        "bellows": [
+          79
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 81,
+        "bellows": [
+          81
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 82,
+        "bellows": [
+          82
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 83,
+        "bellows": [
+          83
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 84,
+        "bellows": [
+          84
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 85,
+        "bellows": [
+          85
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 86,
+        "bellows": [
+          86
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 87,
+        "bellows": [
+          87
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 88,
+        "bellows": [
+          89
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 89,
+        "bellows": [
+          88
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 90,
+        "bellows": [
+          90
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 91,
+        "bellows": [
+          91
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 92,
+        "bellows": [
+          92
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 93,
+        "bellows": [
+          93
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 94,
+        "bellows": [
+          94
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 95,
+        "bellows": [
+          95
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 96,
+        "bellows": [
+          96
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 97,
+        "bellows": [
+          97
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 98,
+        "bellows": [
+          98
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 99,
+        "bellows": [
+          99
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 100,
+        "bellows": [
+          100
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 101,
+        "bellows": [
+          101
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 102,
+        "bellows": [
+          102
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 103,
+        "bellows": [
+          103
+        ],
+        "relation": "many_to_one"
+      },
+      {
+        "sourceStanza": 104,
+        "bellows": [
+          103
+        ],
+        "relation": "many_to_one"
+      },
+      {
+        "sourceStanza": 105,
+        "bellows": [
+          104
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 106,
+        "bellows": [
+          106
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 107,
+        "bellows": [
+          105
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 108,
+        "bellows": [
+          107
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 109,
+        "bellows": [
+          108
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 110,
+        "bellows": [
+          109
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 111,
+        "bellows": [
+          110
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 112,
+        "bellows": [
+          111
+        ],
+        "relation": "many_to_one"
+      },
+      {
+        "sourceStanza": 113,
+        "bellows": [
+          111
+        ],
+        "relation": "many_to_one"
+      },
+      {
+        "sourceStanza": 114,
+        "bellows": [
+          112
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 115,
+        "bellows": [
+          113
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 116,
+        "bellows": [
+          114
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 117,
+        "bellows": [
+          115
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 118,
+        "bellows": [
+          116
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 119,
+        "bellows": [
+          117
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 120,
+        "bellows": [
+          118
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 121,
+        "bellows": [
+          119
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 122,
+        "bellows": [
+          120
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 123,
+        "bellows": [
+          121
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 124,
+        "bellows": [
+          122
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 125,
+        "bellows": [
+          123
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 126,
+        "bellows": [
+          124
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 127,
+        "bellows": [
+          125
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 128,
+        "bellows": [
+          126
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 129,
+        "bellows": [
+          127
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 130,
+        "bellows": [
+          128
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 131,
+        "bellows": [
+          129
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 132,
+        "bellows": [
+          130
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 133,
+        "bellows": [
+          131
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 134,
+        "bellows": [
+          132
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 135,
+        "bellows": [
+          133
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 136,
+        "bellows": [
+          134
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 137,
+        "bellows": [
+          135
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 138,
+        "bellows": [
+          136
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 139,
+        "bellows": [
+          137
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 140,
+        "bellows": [
+          139
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 141,
+        "bellows": [
+          140
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 142,
+        "bellows": [
+          141
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 143,
+        "bellows": [
+          142
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 144,
+        "bellows": [
+          143
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 145,
+        "bellows": [
+          144
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 146,
+        "bellows": [
+          145
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 147,
+        "bellows": [
+          146
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 148,
+        "bellows": [
+          147
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 149,
+        "bellows": [
+          148
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 150,
+        "bellows": [
+          149
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 151,
+        "bellows": [
+          150
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 152,
+        "bellows": [
+          151
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 153,
+        "bellows": [
+          152
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 154,
+        "bellows": [
+          153
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 155,
+        "bellows": [
+          154
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 156,
+        "bellows": [
+          155
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 157,
+        "bellows": [
+          156
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 158,
+        "bellows": [
+          157
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 159,
+        "bellows": [
+          158
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 160,
+        "bellows": [
+          159
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 161,
+        "bellows": [
+          160
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 162,
+        "bellows": [
+          161
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 163,
+        "bellows": [
+          162
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 164,
+        "bellows": [
+          163,
+          164
+        ],
+        "relation": "one_to_many"
+      },
+      {
+        "sourceStanza": 165,
+        "bellows": [
+          165
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 166,
+        "bellows": [
+          138
+        ],
+        "relation": "one_to_one"
+      }
+    ],
+    "bray-1908": [
+      {
+        "sourceStanza": 1,
+        "bellows": [
+          1
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 2,
+        "bellows": [
+          2
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 3,
+        "bellows": [
+          3
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 4,
+        "bellows": [
+          4
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 5,
+        "bellows": [
+          5
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 6,
+        "bellows": [
+          6
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 7,
+        "bellows": [
+          7
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 8,
+        "bellows": [
+          8
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 9,
+        "bellows": [
+          9
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 10,
+        "bellows": [
+          10
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 11,
+        "bellows": [
+          11
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 12,
+        "bellows": [
+          12
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 13,
+        "bellows": [
+          13
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 14,
+        "bellows": [
+          14
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 15,
+        "bellows": [
+          15
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 16,
+        "bellows": [
+          16
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 17,
+        "bellows": [
+          17
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 18,
+        "bellows": [
+          18
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 19,
+        "bellows": [
+          19
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 20,
+        "bellows": [
+          20
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 21,
+        "bellows": [
+          21
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 22,
+        "bellows": [
+          22
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 23,
+        "bellows": [
+          23
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 24,
+        "bellows": [
+          24
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 25,
+        "bellows": [
+          25
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 26,
+        "bellows": [
+          26
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 27,
+        "bellows": [
+          27
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 28,
+        "bellows": [
+          28
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 29,
+        "bellows": [
+          29
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 30,
+        "bellows": [
+          30
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 31,
+        "bellows": [
+          31
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 32,
+        "bellows": [
+          32
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 33,
+        "bellows": [
+          33
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 34,
+        "bellows": [
+          34
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 35,
+        "bellows": [
+          35
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 36,
+        "bellows": [
+          36
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 37,
+        "bellows": [
+          37
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 38,
+        "bellows": [
+          38
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 39,
+        "bellows": [
+          40
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 40,
+        "bellows": [
+          39
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 41,
+        "bellows": [
+          41
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 42,
+        "bellows": [
+          42
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 43,
+        "bellows": [
+          43
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 44,
+        "bellows": [
+          44
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 45,
+        "bellows": [
+          45
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 46,
+        "bellows": [
+          46
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 47,
+        "bellows": [
+          47
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 48,
+        "bellows": [
+          48
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 49,
+        "bellows": [
+          49
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 50,
+        "bellows": [
+          50
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 51,
+        "bellows": [
+          51
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 52,
+        "bellows": [
+          52
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 53,
+        "bellows": [
+          53
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 54,
+        "bellows": [
+          54
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 55,
+        "bellows": [
+          55
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 56,
+        "bellows": [
+          56
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 57,
+        "bellows": [
+          57
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 58,
+        "bellows": [
+          58
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 59,
+        "bellows": [
+          59
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 60,
+        "bellows": [
+          60
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 61,
+        "bellows": [
+          61
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 62,
+        "bellows": [
+          62
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 63,
+        "bellows": [
+          63
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 64,
+        "bellows": [
+          64
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 65,
+        "bellows": [
+          65
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 66,
+        "bellows": [
+          66
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 67,
+        "bellows": [
+          67
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 68,
+        "bellows": [
+          68
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 69,
+        "bellows": [
+          69
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 70,
+        "bellows": [
+          70
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 71,
+        "bellows": [
+          71
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 72,
+        "bellows": [
+          72
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 73,
+        "bellows": [
+          73,
+          74
+        ],
+        "relation": "one_to_many"
+      },
+      {
+        "sourceStanza": 74,
+        "bellows": [
+          75
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 75,
+        "bellows": [
+          77
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 76,
+        "bellows": [
+          78
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 77,
+        "bellows": [
+          76
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 78,
+        "bellows": [
+          80
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 79,
+        "bellows": [
+          79
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 80,
+        "bellows": [
+          81
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 81,
+        "bellows": [
+          82
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 82,
+        "bellows": [
+          83
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 83,
+        "bellows": [
+          84
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 84,
+        "bellows": [
+          85
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 85,
+        "bellows": [
+          86
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 86,
+        "bellows": [
+          87,
+          88
+        ],
+        "relation": "one_to_many"
+      },
+      {
+        "sourceStanza": 87,
+        "bellows": [
+          89
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 88,
+        "bellows": [
+          90
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 89,
+        "bellows": [
+          91
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 90,
+        "bellows": [
+          92
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 91,
+        "bellows": [
+          93
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 92,
+        "bellows": [
+          94
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 93,
+        "bellows": [
+          95
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 94,
+        "bellows": [
+          96
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 95,
+        "bellows": [
+          97
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 96,
+        "bellows": [
+          98
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 97,
+        "bellows": [
+          99
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 98,
+        "bellows": [
+          100
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 99,
+        "bellows": [
+          101
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 100,
+        "bellows": [
+          102
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 101,
+        "bellows": [
+          103
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 102,
+        "bellows": [
+          104
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 103,
+        "bellows": [
+          105
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 104,
+        "bellows": [
+          106
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 105,
+        "bellows": [
+          107
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 106,
+        "bellows": [
+          108
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 107,
+        "bellows": [
+          109
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 108,
+        "bellows": [
+          110
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 109,
+        "bellows": [
+          111
+        ],
+        "relation": "many_to_one"
+      },
+      {
+        "sourceStanza": 110,
+        "bellows": [
+          111
+        ],
+        "relation": "many_to_one"
+      },
+      {
+        "sourceStanza": 111,
+        "bellows": [
+          112
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 112,
+        "bellows": [
+          113
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 113,
+        "bellows": [
+          114
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 114,
+        "bellows": [
+          115
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 115,
+        "bellows": [
+          116
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 116,
+        "bellows": [
+          117
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 117,
+        "bellows": [
+          118
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 118,
+        "bellows": [
+          119
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 119,
+        "bellows": [
+          120
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 120,
+        "bellows": [
+          121
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 121,
+        "bellows": [
+          122
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 122,
+        "bellows": [
+          123
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 123,
+        "bellows": [
+          124
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 124,
+        "bellows": [
+          125
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 125,
+        "bellows": [
+          126
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 126,
+        "bellows": [
+          127
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 127,
+        "bellows": [
+          128
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 128,
+        "bellows": [
+          129
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 129,
+        "bellows": [
+          130
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 130,
+        "bellows": [
+          131
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 131,
+        "bellows": [
+          132
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 132,
+        "bellows": [
+          133
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 133,
+        "bellows": [
+          134
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 134,
+        "bellows": [
+          135
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 135,
+        "bellows": [
+          136
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 136,
+        "bellows": [
+          137
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 137,
+        "bellows": [
+          139
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 138,
+        "bellows": [
+          140
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 139,
+        "bellows": [
+          141
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 140,
+        "bellows": [
+          142
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 141,
+        "bellows": [
+          143
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 142,
+        "bellows": [
+          144
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 143,
+        "bellows": [
+          145
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 144,
+        "bellows": [
+          146
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 145,
+        "bellows": [
+          147
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 146,
+        "bellows": [
+          148
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 147,
+        "bellows": [
+          149
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 148,
+        "bellows": [
+          150
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 149,
+        "bellows": [
+          151
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 150,
+        "bellows": [
+          152
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 151,
+        "bellows": [
+          153
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 152,
+        "bellows": [
+          154
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 153,
+        "bellows": [
+          155
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 154,
+        "bellows": [
+          156
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 155,
+        "bellows": [
+          157
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 156,
+        "bellows": [
+          158
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 157,
+        "bellows": [
+          159
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 158,
+        "bellows": [
+          160
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 159,
+        "bellows": [
+          161
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 160,
+        "bellows": [
+          162
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 161,
+        "bellows": [
+          163
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 162,
+        "bellows": [
+          164
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 163,
+        "bellows": [
+          165
+        ],
+        "relation": "one_to_one"
+      },
+      {
+        "sourceStanza": 164,
+        "bellows": [
+          138
+        ],
+        "relation": "one_to_one"
+      }
+    ]
+  }
+}

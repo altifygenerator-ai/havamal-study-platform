@@ -69,7 +69,7 @@ export function AuthPanel() {
     setMessage("");
 
     if (!supabase) {
-      setMessage("Connect Supabase to enable accounts.");
+      setMessage("Accounts are temporarily unavailable.");
       return;
     }
 

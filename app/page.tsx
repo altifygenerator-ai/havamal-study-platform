@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SearchBox } from "@/components/search-box";
 import { PassageText } from "@/components/passage-text";
 import { JsonLd } from "@/components/json-ld";
-import { getStanzaOfTheDay } from "@/lib/data";
+import { getCompleteCorpus } from "@/lib/complete-corpus";
 import { siteConfig } from "@/lib/site";
 import { absoluteUrl, createMetadata } from "@/lib/seo";
 
@@ -13,8 +13,14 @@ export const metadata = createMetadata({
   path: "/",
 });
 
-export default function HomePage() {
-  const featured = getStanzaOfTheDay();
+export const revalidate = 86_400;
+
+export default async function HomePage() {
+  const corpus = await getCompleteCorpus();
+  const day = Math.floor(Date.now() / 86_400_000);
+  const featured = corpus.passages.length
+    ? corpus.passages[Math.abs(day) % corpus.passages.length]
+    : undefined;
 
   return (
     <>

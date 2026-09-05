@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { categories, getAllPassages } from "@/lib/data";
+import { categories } from "@/lib/data";
+import { getCompleteCorpus } from "@/lib/complete-corpus";
 import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Reader Discussion",
@@ -10,8 +11,10 @@ export const metadata = createMetadata({
 
 
 
-export default function Page() {
-  const passages = getAllPassages();
+export const revalidate = 86_400;
+
+export default async function Page() {
+  const passages = (await getCompleteCorpus()).passages;
 
   return (
     <div className="page-shell">

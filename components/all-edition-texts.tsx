@@ -15,21 +15,27 @@ export function AllEditionTexts({
   if (!editions.length) return null;
 
   return (
-    <section aria-labelledby="other-translations-heading">
-      <h2 className="rule-heading" id="other-translations-heading">
-        Other translations of this passage
-      </h2>
-      <div className="comparison-grid">
-        {editions.map(({ edition, passage: editionPassage }) => (
-          <PassageText
-            edition={edition}
-            headingLevel="h3"
-            key={`${edition.slug}-${editionPassage.source_stanza_number}`}
-            passage={editionPassage}
-            showOldNorse={Boolean(editionPassage.old_norse_lines?.length)}
-          />
-        ))}
-      </div>
-    </section>
+    <details className="all-edition-details">
+      <summary>
+        View all translations together
+        <span>{editions.length + 1} editions</span>
+      </summary>
+      <section aria-labelledby="other-translations-heading">
+        <h2 className="sr-only" id="other-translations-heading">
+          Other translations of this passage
+        </h2>
+        <div className="comparison-grid all-edition-grid">
+          {editions.map(({ edition, passage: editionPassage }) => (
+            <PassageText
+              edition={edition}
+              headingLevel="h3"
+              key={`${edition.slug}-${editionPassage.source_stanza_number}`}
+              passage={editionPassage}
+              showOldNorse={Boolean(editionPassage.old_norse_lines?.length)}
+            />
+          ))}
+        </div>
+      </section>
+    </details>
   );
 }

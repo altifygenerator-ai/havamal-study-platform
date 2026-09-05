@@ -20,9 +20,6 @@ export function EditionTabs({ passage }: { passage: CanonicalPassage }) {
 
   return (
     <div>
-      <div className={`corpus-load-state stanza-corpus-state ${corpus.state}`} role="status">
-        <strong>{corpus.message}</strong>
-      </div>
       <div className="edition-control-row">
         <div className="archive-tabs" role="tablist" aria-label="Available translations">
           {completePassage.editions.map(({ edition, passage: editionPassage }) => (

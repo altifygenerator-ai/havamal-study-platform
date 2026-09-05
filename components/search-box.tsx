@@ -130,6 +130,7 @@ export function SearchBox({
           onKeyDown={handleKeyDown}
           placeholder="Phrase, theme, translator, or stanza"
           autoComplete="off"
+          enterKeyHint="search"
           role="combobox"
           aria-autocomplete="list"
           aria-expanded={open}

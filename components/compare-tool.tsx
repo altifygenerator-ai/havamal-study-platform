@@ -58,11 +58,6 @@ export function CompareTool({
   return (
     <div className="compare-tool">
       <aside className="compare-controls">
-        {corpus.state !== "ready" ? (
-          <div className={`corpus-load-state ${corpus.state}`} role="status">
-            <strong>{corpus.message}</strong>
-          </div>
-        ) : null}
         <label>
           Passage
           <select
