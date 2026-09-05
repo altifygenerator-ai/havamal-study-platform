@@ -1743,16 +1743,60 @@ code {
 }
 
 .discussion-composer {
-  padding: 1.2rem;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.25rem;
   margin-top: 1.5rem;
   background: rgba(238, 227, 203, 0.66);
   border-top: 1px solid var(--leather);
 }
 
-.discussion-composer input {
+.discussion-composer h2 {
+  margin: 0;
+}
+
+.discussion-composer label {
+  display: grid;
+  gap: 0.45rem;
   width: 100%;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.discussion-composer input,
+.discussion-composer textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
   padding: 0.8rem;
-  margin: 0.5rem 0 1rem;
+  margin: 0;
+  font: inherit;
+}
+
+.discussion-composer textarea {
+  min-height: 150px;
+  line-height: 1.55;
+}
+
+.discussion-composer > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.discussion-composer > div:last-child > p {
+  flex: 1 1 260px;
+  min-height: 1.25rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.discussion-composer > div:last-child > button {
+  flex: 0 0 auto;
 }
 
 .reply-notice {
@@ -1762,9 +1806,12 @@ code {
 }
 
 .reply-notice button {
+  width: auto !important;
+  min-height: 0;
   padding: 0.2rem !important;
   color: inherit !important;
   background: transparent !important;
+  border: 0;
   text-decoration: underline;
 }
 
@@ -3489,7 +3536,23 @@ input[type="radio"] {
   }
 
   .discussion-composer {
+    gap: 0.85rem;
     padding: 1rem;
+  }
+
+  .discussion-composer textarea {
+    min-height: 135px;
+  }
+
+  .discussion-composer > div:last-child {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .discussion-composer > div:last-child > p {
+    flex: none;
+    min-height: 0;
   }
 
   .site-footer {
