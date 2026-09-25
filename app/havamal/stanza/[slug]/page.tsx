@@ -54,13 +54,16 @@ export async function generateMetadata({
     .map(({ edition }) => edition.translator ?? edition.editor)
     .filter((name): name is string => Boolean(name));
   const excerpt = cleanExcerpt(primary.passage.text_lines.join(" "), 112);
+  const opening = cleanExcerpt(primary.passage.text_lines[0] ?? "", 46);
   const comparison =
     translators.length > 1
       ? ` Compare ${translators.slice(0, 4).join(", ")}.`
       : "";
 
   return createMetadata({
-    title: `Hávamál Stanza ${stanzaNumber} — ${translator}`,
+    title: opening
+      ? `Hávamál Stanza ${stanzaNumber}: “${opening}”`
+      : `Hávamál Stanza ${stanzaNumber} — ${translator}`,
     description: `Read Hávamál stanza ${stanzaNumber} in ${translator}.${comparison} ${excerpt}`,
     path: `/havamal/stanza/${slug}`,
     type: "article",
