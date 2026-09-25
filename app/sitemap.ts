@@ -10,7 +10,7 @@ export const revalidate = 86_400;
 // Google ignores sitemap priority and changeFrequency.  Keep lastModified tied
 // to a real content release instead of replacing it with the current time on
 // every request.
-const CONTENT_RELEASE = new Date("2026-09-05T00:00:00.000Z");
+const CONTENT_RELEASE = new Date("2026-09-24T00:00:00.000Z");
 
 const CORE_ROUTES = [
   "/",
@@ -18,6 +18,8 @@ const CORE_ROUTES = [
   "/compare",
   "/themes",
   "/editions",
+  "/translations",
+  "/free-editions",
   "/study",
   "/sources",
   "/methodology",
@@ -59,9 +61,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...editionRegistry
       .filter(
         (edition) =>
-          edition.enabled &&
-          edition.fullTextDisplayAllowed &&
-          editionSlugs.has(edition.slug),
+          (edition.enabled &&
+            edition.fullTextDisplayAllowed &&
+            editionSlugs.has(edition.slug)) ||
+          edition.licenseStatus === "permission_required",
       )
       .map((edition) => ({
         url: absoluteUrl(`/editions/${edition.slug}`),

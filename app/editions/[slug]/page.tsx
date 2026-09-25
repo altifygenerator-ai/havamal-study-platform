@@ -36,11 +36,17 @@ export async function generateMetadata({
   const stanzaCount = source?.passages.length ?? 0;
   const name = edition.translator ?? edition.editor ?? edition.editionTitle;
 
+  const metadataOnly = edition.licenseStatus === "permission_required";
+
   return createMetadata({
     title: `${name} Hávamál Translation (${edition.publicationYear})`,
-    description: `Read about ${name}’s ${edition.publicationYear} Hávamál edition, including publication details, source information, license terms, and ${stanzaCount || "available"} stanzas.`,
+    description: metadataOnly
+      ? `Bibliographic information for ${name}’s ${edition.publicationYear} Hávamál edition, with publication and source details. Copyrighted text is not reproduced here.`
+      : `Read about ${name}’s ${edition.publicationYear} Hávamál edition, including publication details, source information, license terms, and ${stanzaCount || "available"} stanzas.`,
     path: `/editions/${slug}`,
-    index: edition.enabled && edition.fullTextDisplayAllowed && stanzaCount > 0,
+    index:
+      (edition.enabled && edition.fullTextDisplayAllowed && stanzaCount > 0) ||
+      metadataOnly,
   });
 }
 
@@ -143,6 +149,22 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
               </Link>
             );
           })}
+        </div>
+      ) : edition.licenseStatus === "permission_required" ? (
+        <div className="manuscript-note">
+          <h2>About this edition</h2>
+          <p>
+            This archive does not reproduce the copyrighted translation. The edition
+            record is provided so readers can identify the book, publication year, and
+            source without confusing it with the public-domain translations available
+            here.
+          </p>
+          <p>
+            <a href={edition.sourceLocation}>Visit the translator or publisher page →</a>
+          </p>
+          <p>
+            <Link href="/translations">Compare the translations available in the archive →</Link>
+          </p>
         </div>
       ) : (
         <div className="empty-state">The full text of this edition is not available here.</div>

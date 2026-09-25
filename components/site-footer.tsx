@@ -15,6 +15,8 @@ export function SiteFooter() {
           Read, compare, save, and discuss the Hávamál across editions.
         </p>
         <nav aria-label="Footer navigation">
+          <Link href="/translations">Translations</Link>
+          <Link href="/free-editions">Free editions</Link>
           <Link href="/methodology">Methodology</Link>
           <Link href="/licensing">Licensing</Link>
           <Link href="/sources">Sources</Link>
