@@ -61,6 +61,7 @@ export default async function HomePage() {
           <Link href="/themes"><span>III</span>Follow a theme</Link>
           <Link href="/study"><span>IV</span>Open a study guide</Link>
           <Link href="/discuss"><span>V</span>Join the discussion</Link>
+          <Link href="/translations"><span>VI</span>Choose a translation</Link>
         </nav>
       </section>
 
