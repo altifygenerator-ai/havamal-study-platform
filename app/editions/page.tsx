@@ -20,6 +20,10 @@ export default function Page() {
           and scholarly traditions.
         </p>
       </header>
+      <nav className="folio-actions" aria-label="Edition guides">
+        <Link href="/translations">Which translation should I read?</Link>
+        <Link href="/free-editions">Free editions, scans, and PDFs</Link>
+      </nav>
       <div className="card-list">
         {editionRegistry.map((edition) => (
           <article className="flat-card" key={edition.slug}>
