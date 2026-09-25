@@ -4,7 +4,7 @@ import { editionRegistry } from "@/lib/data";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Hávamál Translations: Bellows, Thorpe, Bray, Hollander, Pettit & Crawford",
+  title: "Hávamál Translations: Bellows, Thorpe, Bray & More",
   description:
     "Compare major English Hávamál translations by publication year, language, availability, and source, with links to editions you can read in the archive.",
   path: "/translations",
